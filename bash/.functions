@@ -1,0 +1,39 @@
+
+# TYPE: function
+# DESC: ensures the default 'python' command is v3.6+
+function py3 {
+	if [ $# -eq 0 ] 
+	then
+    	python3.6
+	else
+		echo "args"
+		python3.6 "$@"
+	fi
+}
+
+# TYPE: function
+# DESC: ensures the default 'python' command is v3.6+
+function py2 {
+	if [ $# -eq 0 ] 
+	then
+    	python2.7
+	else
+		python2.7 "$@"
+	fi
+}
+
+# TYPE: function
+# DESC: Creates and openes new file
+function new {
+  if [[ $# -eq 0 ]] ; then
+    cd ${NVALT_DIR}
+    subl -n
+   else
+    touch $1
+    open $1
+   fi
+}
+
+
+
+

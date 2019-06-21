@@ -1,0 +1,145 @@
+
+# TYPE: alias
+# DESC: short hand for going up a directory
+alias cd..="cd .."
+
+# TYPE: alias
+# DESC: short hand for going up two directories
+alias cd...="cd ../.."
+
+# TYPE: alias
+# DESC: short hand for going up three directories
+alias cd....="cd ../../.."
+
+# TYPE: alias
+# DESC: short hand for going to previous working directory
+alias cd\-="cd -"
+
+# TYPE: alias
+# DESC: clear terminal
+alias cl="osascript -e 'tell application \"System Events\" to keystroke \"k\" using command down'"
+
+# TYPE: alias
+# DESC: list just directories
+alias ld="ls -dl .*/ */"
+
+# TYPE: alias
+# DESC: list just files
+alias lf="ls -p | grep -v /"
+
+# TYPE: alias
+# DESC: ls sorted by time
+alias lst="cl;ls -alhtr"
+
+# TYPE: alias
+# DESC: ls sorted by name
+alias ls="cl;ls -alhG"
+
+# TYPE: alias
+# DESC: allow use of 'sudo' with aliases
+alias sd="sudo "
+
+# TYPE: alias
+# DESC: source the .bash_profile
+alias src="source ${SCRIPT_DIR}/.bash_profile"
+
+# TYPE: alias
+# DESC: open .bash_profile
+alias pro="open ${SCRIPT_DIR}/.bash_profile"
+
+# TYPE: alias
+# DESC: change to .dotfiles directory
+alias dot="cd ${SCRIPT_DIR}"
+
+# TYPE: alias
+# DESC: open .pythonrc
+alias pyrc="open ${SCRIPT_DIR}/.pythonrc"
+
+# TYPE: alias
+# DESC: open hamerspoon config file
+alias ham="open ${SCRIPT_DIR}/.hammerspoon/init.lua"
+
+# TYPE: alias
+# DESC: open app openers script
+alias openers="open ${SCRIPT_DIR}/bash/.openers"
+
+# TYPE: alias
+# DESC: open tasks file
+alias imp="open ${NVALT_DIR}/important.txt || echo 'NOTE: Make sure you set NVALT_DIR in .local_config'"
+
+# TYPE: alias
+# DESC: open tasks file
+alias work="open ${NVALT_DIR}/working.txt || echo 'NOTE: Make sure you set SRC_DIR in .local_config'"
+
+# TYPE: alias
+# DESC: open tokens directory
+alias keys="open ${ME_DIR}/tokens || echo 'NOTE: Make sure you set ME_DIR in .local_config'"
+
+# TYPE: alias
+# DESC: open vim config file
+alias vimrc="open ${SCRIPT_DIR}/.vimrc"
+
+# TYPE: alias
+# DESC: quickly open python tools directory
+alias tools="open ${PYTHON_TOOLS_DIR} || echo 'NOTE: Make sure you set PYTHON_TOOLS_DIR in .local_config'"
+
+# TYPE: alias
+# DESC: list all active aliases
+alias aliases="python ${PYTHON_DIR}/get_aliases.py"
+
+# TYPE: alias
+# DESC: show recently used commands
+alias cmds="python ${PYTHON_DIR}/get_top_commands.py"
+
+# TYPE: alias
+# DESC: list directories in the current PATH
+alias path="python ${PYTHON_DIR}/get_path.py"
+
+# TYPE: alias
+# DESC: quick jump to Desktop directory
+alias d="cd ~/Desktop; cl; ls"
+
+# TYPE: alias
+# DESC: quick jump to home directory and ls
+alias h="cd ~; cl; ls"
+
+# TYPE: alias
+# DESC: quick jump to src directory and ls
+alias s="cd ${SRC_DIR}; cl; ls"
+
+# TYPE: alias
+# DESC: quick jump to src directory and ls
+alias m="cd ${ME_DIR}; cl; ls"
+
+# TYPE: alias
+# DESC: opens the current directory in Finder
+alias o="open ."
+
+# TYPE: alias
+# DESC: prints out the current environment variables alphabetically
+alias env="env | sort"
+
+# TYPE: alias
+# DESC: hide hidden files in Finder
+alias hide="defaults write com.apple.finder AppleShowAllFiles FALSE  && killall Finder"
+
+# TYPE: alias
+# DESC: show hidden files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder"
+
+# TYPE: alias
+# DESC: follow cpu activity
+alias cpu="top -F -R -o cpu"
+
+# TYPE: alias
+# DESC: activate screensaver
+alias lock="/System/Library/CoreServices/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine"
+
+# TYPE: alias
+# DESC: open applications directory in Finder
+alias app="open /Applications"
+
+# TYPE: alias
+# DESC: open Local applications directory in Finder
+alias lapp="open {APPS_DIR}"
+
