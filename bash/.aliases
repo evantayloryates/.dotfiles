@@ -2,19 +2,19 @@
 
 # TYPE: alias
 # DESC: quick open functions script
-alias fu="open ${SCRIPT_DIR}/bash/.functions"
+alias functions="open ${SCRIPT_DIR}/bash/.functions"
 
 # TYPE: alias
 # DESC: quick open aliases script
-alias al="open ${SCRIPT_DIR}/bash/.aliases"
+alias aliases="open ${SCRIPT_DIR}/bash/.aliases"
 
 # TYPE: alias
 # DESC: quick open exports script
-alias ex="open ${SCRIPT_DIR}/bash/.exports"
+alias exports="open ${SCRIPT_DIR}/bash/.exports"
 
 # TYPE: alias
 # DESC: quick open openers script
-alias op="open ${SCRIPT_DIR}/bash/.openers"
+alias openers="open ${SCRIPT_DIR}/bash/.openers"
 
 # TYPE: alias
 # DESC: short hand for going up a directory
