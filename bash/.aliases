@@ -65,11 +65,11 @@ alias openers="open ${SCRIPT_DIR}/bash/.openers"
 
 # TYPE: alias
 # DESC: open tasks file
-alias imp="open ${NVALT_DIR}/important.txt || echo 'NOTE: Make sure you set NVALT_DIR in .local_config'"
+alias imp="open ${NOTES_DIR}/important.txt || echo 'NOTE: Make sure you set NOTES_DIR in .local_config'"
 
 # TYPE: alias
 # DESC: open tasks file
-alias work="open ${NVALT_DIR}/working.txt || echo 'NOTE: Make sure you set SRC_DIR in .local_config'"
+alias work="open ${NOTES_DIR}/working.txt || echo 'NOTE: Make sure you set NOTES_DIR in .local_config'"
 
 # TYPE: alias
 # DESC: open tokens directory
