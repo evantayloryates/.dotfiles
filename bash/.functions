@@ -1,3 +1,4 @@
+#!/bin/bash
 
 # TYPE: function
 # DESC: ensures the default 'python' command is v3.6+
