@@ -17,6 +17,10 @@ alias exports="open ${SCRIPT_DIR}/bash/.exports"
 alias openers="open ${SCRIPT_DIR}/bash/.openers"
 
 # TYPE: alias
+# DESC: quick open openers script
+alias config="open ${SCRIPT_DIR}/.local_config"
+
+# TYPE: alias
 # DESC: short hand for going up a directory
 alias cd..="cd .."
 
@@ -158,5 +162,5 @@ alias app="open /Applications"
 
 # TYPE: alias
 # DESC: open Local applications directory in Finder
-alias lapp="open {APPS_DIR}"
+alias lapp="open ${APPS_DIR}"
 
