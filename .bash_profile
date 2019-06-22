@@ -20,37 +20,23 @@ source $SCRIPT_DIR/bash/.exports
 source $SCRIPT_DIR/bash/.functions
 
 
+#################
+## ANSI COLORS ##
+#################
 
+# Black        0;30     Dark Gray     1;30
+# Red          0;31     Light Red     1;31
+# Green        0;32     Light Green   1;32
+# Brown/Orange 0;33     Yellow        1;33
+# Blue         0;34     Light Blue    1;34
+# Purple       0;35     Light Purple  1;35
+# Cyan         0;36     Light Cyan    1;36
+# Light Gray   0;37     White         1;37
 
+export CLICOLOR=1
 
-
-
-
-# #################
-# ## ANSI COLORS ##
-# #################
-
-# # Black        0;30     Dark Gray     1;30
-# # Red          0;31     Light Red     1;31
-# # Green        0;32     Light Green   1;32
-# # Brown/Orange 0;33     Yellow        1;33
-# # Blue         0;34     Light Blue    1;34
-# # Purple       0;35     Light Purple  1;35
-# # Cyan         0;36     Light Cyan    1;36
-# # Light Gray   0;37     White         1;37
-
-# export CLICOLOR=1
-
-# LGRAY='\033[0;37m'
-# NC='\033[0m' # No Color
-
-# # TYPE: file_config
-# SCRIPT_DIR=./scripts 
-
-
-
-
-# source $PYTHON_DIR/.openers
+LGRAY='\033[0;37m'
+NC='\033[0m' # No Color
 
 
 # TYPE: misc
@@ -68,7 +54,7 @@ command2()
 {
     if [ ! "$command_flag" ]
     then
-        ls                            # Put whatever command(s) you want here.
+        ls  # Put whatever command(s) you want here.
     fi
     command_flag=
 }

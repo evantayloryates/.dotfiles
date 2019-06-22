@@ -102,7 +102,7 @@ alias tools="open ${PYTHON_TOOLS_DIR} || echo 'NOTE: Make sure you set PYTHON_TO
 
 # TYPE: alias
 # DESC: list all active aliases
-alias aliases="python ${PYTHON_DIR}/get_aliases.py"
+alias ls-al="python ${PYTHON_DIR}/get_aliases.py"
 
 # TYPE: alias
 # DESC: show recently used commands
