@@ -43,19 +43,19 @@ end)
 
 -- Move windows to space hotkeys
 hs.hotkey.bind({"option"}, "`", function()
-	MoveWindowToSpace(1)
+  
 end)
 hs.hotkey.bind({"option"}, "1", function()
-	MoveWindowToSpace(2)
+	
 end)
 hs.hotkey.bind({"option"}, "2", function()
-	MoveWindowToSpace(3)
+  
 end)
 hs.hotkey.bind({"option"}, "3", function()
-	MoveWindowToSpace(4)
+  
 end)
 hs.hotkey.bind({"option"}, "4", function()
-	MoveWindowToSpace(5)
+  
 end)
 
 function setFull()
@@ -120,8 +120,6 @@ function MoveWindowToSpace(sp)
     spaces.changeToSpace(spaceID, false)              -- follow window to new space
     currentSpaceID = spaceID
 end
-  
-
 
 -- Feedback for config load
 hs.alert.show("Config loaded")
