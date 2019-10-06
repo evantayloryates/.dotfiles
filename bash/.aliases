@@ -2,7 +2,11 @@
 
 # TYPE: alias
 # DESC: open dofiles directory in Sublime
-alias pro="subl $DOTFILES_DIR"
+alias dotfiles="subl $DOTFILES_DIR"
+
+# TYPE: alias
+# DESC: open dofiles directory in Sublime
+alias pro="subl $HOME/.bash_profile"
 
 # TYPE: alias
 # DESC: source the .bash_profile
