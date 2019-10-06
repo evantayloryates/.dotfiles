@@ -1,4 +1,4 @@
-def aprint(a, indent_cnt=0, line_limit=80, ind=False):
+def ap(a, ll=80, ind=False):
     """
     prints the top level of an array by line with indices
     """
@@ -15,7 +15,7 @@ def aprint(a, indent_cnt=0, line_limit=80, ind=False):
     # remove the trailing "newline"
     print (out[:-1])
 
-def dprint(d):
+def dp(d):
     """
     prints the key-value pairs of python dict
     """
@@ -26,7 +26,7 @@ def dprint(d):
         out += final_line
     print (out)
 
-def ptype(obj, pr=True):
+def pt(obj, pr=True):
     simplified = {
         "builtin_function_or_method" : "function",
         "method-wrapper" : "wrapper",
@@ -50,7 +50,7 @@ def filterFunctions(items):
             values += [item]
     return values, non_values
 
-def pdir(obj):
+def pd(obj):
     """
     runs "dir" function on the input object and pretty prints the output
     """
