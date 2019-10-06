@@ -27,3 +27,5 @@ fi
 
 # Else check if there are pending changes in dotfiles repo
 git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR status
+
+echo "test"
