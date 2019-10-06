@@ -2,7 +2,7 @@
 
 # TYPE: export
 # DESC: sets the main terminal prompt displayed on every line
-export PS1='\[`tput setaf 014`\]\h\[`tput setaf 255`\]:$PWD\n\[`tput sgr0`\]\$ '
+export PS1='\[`tput setaf 014`\]\h\[`tput setaf 255`\]:$PWD\n\[`tput setaf 200`\]\w \[`tput sgr0`\]$ '
 
 # TYPE: export
 # DESC: sets the continuation string for multi-line commands
@@ -14,16 +14,15 @@ export EDITOR="${EDITOR_APP}/Contents/MacOS/Sublime\ Text"
 
 # TYPE: export
 # DESC: add a python startup script
-export PYTHONSTARTUP=${REPO_DIR}.pythonrc
+export PYTHONSTARTUP=${DOTFILES_DIR}/.pythonrc
 
 # TYPE: export
 # DESC: Used to detect if iTerm is active terminal
 export TERM_PROGRAM="iTerm"
 
 # TYPE: path
-# DESC: adds subl command to the active PATH
+# DESC: adds 'subl' command to the active PATH
 PATH=$PATH:${EDITOR_APP}/Contents/SharedSupport/bin
 
+
 export PATH
-
-

@@ -1,24 +1,32 @@
 #!/bin/bash
 
 # TYPE: alias
+# DESC: open dofiles directory in Sublime
+alias pro="subl $DOTFILES_DIR"
+
+# TYPE: alias
+# DESC: source the .bash_profile
+alias src="source ~/.bash_profile"
+
+# TYPE: alias
 # DESC: quick open functions script
-alias functions="open ${SCRIPT_DIR}/bash/.functions"
+alias fns="open $DOTFILES/bash/.functions"
 
 # TYPE: alias
 # DESC: quick open aliases script
-alias aliases="open ${SCRIPT_DIR}/bash/.aliases"
+alias als="open $DOTFILES/bash/.aliases"
 
 # TYPE: alias
 # DESC: quick open exports script
-alias exports="open ${SCRIPT_DIR}/bash/.exports"
+alias exp="open $DOTFILES/bash/.exports"
+
+# TYPE: alias
+# DESC: Open local bash file
+alias loc="subl $DOTFILES/bash/.locals"
 
 # TYPE: alias
 # DESC: quick open openers script
-alias openers="open ${SCRIPT_DIR}/bash/.openers"
-
-# TYPE: alias
-# DESC: quick open openers script
-alias config="open ${SCRIPT_DIR}/.local_config"
+alias conf="open $DOTFILES/.local_config"
 
 # TYPE: alias
 # DESC: short hand for going up a directory
@@ -38,7 +46,7 @@ alias cd\-="cd -"
 
 # TYPE: alias
 # DESC: clear terminal
-alias cl="osascript -e 'tell application \"System Events\" to keystroke \"k\" using command down'"
+alias cl="clear"
 
 # TYPE: alias
 # DESC: list just directories
@@ -49,72 +57,56 @@ alias ld="ls -dl .*/ */"
 alias lf="ls -p | grep -v /"
 
 # TYPE: alias
-# DESC: ls sorted by time
-alias lst="cl;ls -alhtr"
-
-# TYPE: alias
 # DESC: ls sorted by name
-alias ls="cl;ls -alhG"
+alias ls="clear;ls -alhG"
 
 # TYPE: alias
 # DESC: allow use of 'sudo' with aliases
 alias sd="sudo "
 
 # TYPE: alias
-# DESC: source the .bash_profile
-alias src="source ${SCRIPT_DIR}/.bash_profile"
-
-# TYPE: alias
-# DESC: open .bash_profile
-alias pro="open ${SCRIPT_DIR}/.bash_profile"
+# DESC: open .init
+alias init="subl $DOTFILES_DIR/.init"
 
 # TYPE: alias
 # DESC: change to .dotfiles directory
-alias dot="cd ${SCRIPT_DIR}"
+alias dot="cd $DOTFILES_DIR; cl; ls"
 
 # TYPE: alias
 # DESC: open .pythonrc
-alias pyrc="open ${SCRIPT_DIR}/.pythonrc"
+alias pyrc="open $DOTFILES_DIR/.pythonrc"
 
 # TYPE: alias
 # DESC: open hamerspoon config file
-alias ham="open ${SCRIPT_DIR}/.hammerspoon/init.lua"
-
-# TYPE: alias
-# DESC: open app openers script
-alias openers="open ${SCRIPT_DIR}/bash/.openers"
+alias ham="open $DOTFILES_DIR/.hammerspoon/init.lua"
 
 # TYPE: alias
 # DESC: open tasks file
-alias imp="open ${NOTES_DIR}/important.txt || echo 'NOTE: Make sure you set NOTES_DIR in .local_config'"
-
-# TYPE: alias
-# DESC: open tasks file
-alias work="open ${NOTES_DIR}/working.txt || echo 'NOTE: Make sure you set NOTES_DIR in .local_config'"
+alias tasks="subl $NOTES_DIR/tasks.txt || echo 'ERROR: Make sure you set NOTES_DIR in .local_config'"
 
 # TYPE: alias
 # DESC: open tokens directory
-alias keys="open ${ME_DIR}/tokens || echo 'NOTE: Make sure you set ME_DIR in .local_config'"
+alias keys="subl $KEYS_DIR || echo 'NOTE: Make sure you set KEYS_DIR in .local_config'"
 
 # TYPE: alias
 # DESC: open vim config file
-alias vimrc="open ${SCRIPT_DIR}/.vimrc"
+alias vimrc="open $DOTFILES_DIR/.vimrc"
 
 # TYPE: alias
 # DESC: quickly open python tools directory
-alias tools="open ${PYTHON_TOOLS_DIR} || echo 'NOTE: Make sure you set PYTHON_TOOLS_DIR in .local_config'"
+alias tools="open $PYTHON_TOOLS_DIR || echo 'ERROR: Make sure you set PYTHON_TOOLS_DIR in .local_config'"
 
 # TYPE: alias
 # DESC: list all active aliases
-alias ls-al="python ${PYTHON_DIR}/get_aliases.py"
+alias aliases="python $DOTFILES_DIR/scripts/get_aliases.py"
 
 # TYPE: alias
 # DESC: show recently used commands
-alias cmds="python ${PYTHON_DIR}/get_top_commands.py"
+alias commands="python $DOTFILES_DIR/scripts/get_top_commands.py"
 
 # TYPE: alias
 # DESC: list directories in the current PATH
-alias path="python ${PYTHON_DIR}/get_path.py"
+alias path="python $DOTFILES_DIR/scripts/get_path.py"
 
 # TYPE: alias
 # DESC: quick jump to Desktop directory
@@ -122,19 +114,27 @@ alias d="cd ~/Desktop; cl; ls"
 
 # TYPE: alias
 # DESC: quick jump to home directory and ls
-alias h="cd ~; cl; ls"
+alias h="cd ~; cl"
 
 # TYPE: alias
 # DESC: quick jump to src directory and ls
-alias s="cd ${SRC_DIR}; cl; ls"
-
-# TYPE: alias
-# DESC: quick jump to src directory and ls
-alias m="cd ${ME_DIR}; cl; ls"
+alias s="cd $SRC_DIR; cl; ls"
 
 # TYPE: alias
 # DESC: opens the current directory in Finder
 alias o="open ."
+
+# TYPE: alias
+# DESC: opens the current directory in Finder
+alias gs="git status"
+
+# TYPE: alias
+# DESC: opens the current directory in Finder
+alias ga="git add"
+
+# TYPE: alias
+# DESC: opens the current directory in Finder
+alias gc="git commit"
 
 # TYPE: alias
 # DESC: prints out the current environment variables alphabetically
@@ -158,9 +158,16 @@ alias lock="/System/Library/CoreServices/ScreenSaverEngine.app/Contents/MacOS/Sc
 
 # TYPE: alias
 # DESC: open applications directory in Finder
-alias app="open /Applications"
+alias app="open $APPS_DIR"s
 
 # TYPE: alias
-# DESC: open Local applications directory in Finder
-alias lapp="open ${APPS_DIR}"
+# DESC: Opens new Chrome window
+alias chr="open -n $APPS_DIR/Google\ Chrome.app"
 
+# TYPE: alias
+# DESC: Opens System Preferences
+alias set="open -a /Applications/System\ Preferences.app"
+
+# TYPE: alias
+# DESC: cd to github folder
+alias gh="cd $SRC_DIR/github;cl"
