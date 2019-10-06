@@ -29,7 +29,7 @@ if [[ `git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR status --porc
   echo "Pushing commit..."
   git_push_msg=$(git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR push --quiet)
 else
-  echo "No local changes"
+  echo "No local dotfile changes"
 fi
 
 
