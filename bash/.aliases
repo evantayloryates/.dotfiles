@@ -93,10 +93,6 @@ alias ham="open $DOTFILES_DIR/.hammerspoon/init.lua"
 alias tasks="subl $NOTES_DIR/tasks.txt || echo 'ERROR: Make sure you set NOTES_DIR in .local_config'"
 
 # TYPE: alias
-# DESC: open tokens directory
-alias keys="subl $KEYS_DIR || echo 'NOTE: Make sure you set KEYS_DIR in .local_config'"
-
-# TYPE: alias
 # DESC: open vim config file
 alias vimrc="open $DOTFILES_DIR/.vimrc"
 
