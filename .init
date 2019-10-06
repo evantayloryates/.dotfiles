@@ -1,7 +1,5 @@
-#!/bin/bash
 
-echo "test change"
-echo "change1"
+#!/bin/bash
 
 # source lcoal configurations
 source $DOTFILES_DIR/.local_configs
