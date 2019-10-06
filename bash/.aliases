@@ -18,23 +18,23 @@ alias src="source ~/.bash_profile"
 
 # TYPE: alias
 # DESC: quick open functions script
-alias fns="open $DOTFILES/bash/.functions"
+alias fns="open $DOTFILES_DIR/bash/.functions"
 
 # TYPE: alias
 # DESC: quick open aliases script
-alias als="open $DOTFILES/bash/.aliases"
+alias als="open $DOTFILES_DIR/bash/.aliases"
 
 # TYPE: alias
 # DESC: quick open exports script
-alias exp="open $DOTFILES/bash/.exports"
+alias exp="open $DOTFILES_DIR/bash/.exports"
 
 # TYPE: alias
 # DESC: Open local bash file
-alias loc="subl $DOTFILES/bash/.locals"
+alias loc="subl $DOTFILES_DIR/bash/.locals"
 
 # TYPE: alias
 # DESC: quick open openers script
-alias conf="open $DOTFILES/.local_config"
+alias conf="open $DOTFILES_DIR/.local_config"
 
 # TYPE: alias
 # DESC: short hand for going up a directory
