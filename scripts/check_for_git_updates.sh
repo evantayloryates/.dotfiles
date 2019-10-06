@@ -26,6 +26,6 @@ else
 fi
 
 # Else check if there are pending changes in dotfiles repo
-git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR status
-
-echo "test"
+git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR add .
+git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR commit -m "auto commit from script"
+git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR push
