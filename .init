@@ -1,24 +1,19 @@
-# Get the directory where this script lives (not necessarily working directory)
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+#!/bin/bash
 
-# For python scripts used in .dotfiles repo
-PYTHON_DIR=$THIS_DIR/python
-
-# load user-specific constants
-source $SCRIPT_DIR/.local_config
-
-# source openers
-source $SCRIPT_DIR/bash/.openers
+# source lcoal configurations
+source $DOTFILES_DIR/.local_configs
 
 # source aliases
-source $SCRIPT_DIR/bash/.aliases
+source $DOTFILES_DIR/bash/.aliases
 
 # source exports
-source $SCRIPT_DIR/bash/.exports
+source $DOTFILES_DIR/bash/.exports
 
 # source functions
-source $SCRIPT_DIR/bash/.functions
+source $DOTFILES_DIR/bash/.functions
 
+# try sourcing local bash functions, aliases, etc...
+source $DOTFILES_DIR/bash/.locals 2>/dev/null || printf "No local bash file found at ${DOTFILES_DIR}/bash/.locals    Continuing...\n"
 
 #################
 ## ANSI COLORS ##
@@ -40,7 +35,7 @@ NC='\033[0m' # No Color
 
 
 # TYPE: misc
-# DESC: Entering an empty command 
+# DESC: Set the empty command to 'ls'
 command1()
 {
     if [ "$BASH_COMMAND" != command2 ]
