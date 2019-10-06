@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Set the directory where you store your python tools
-# Source Code: https://github.com/evantayloryates/python-tools
-PYTHON_TOOLS_DIR=/some/dir
 
 # Wherever you keep your local source code
 SRC_DIR=/some/dir

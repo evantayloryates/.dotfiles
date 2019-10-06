@@ -26,6 +26,6 @@ PATH=$PATH:${EDITOR_APP}/Contents/SharedSupport/bin
 
 # 
 #
-export PYTHONSTARTUP=~/.pythonrc.py
+export PYTHONSTARTUP=$DOTFILES_DIR/.pythonrc.py
 
 export PATH
