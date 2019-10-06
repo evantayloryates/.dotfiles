@@ -21,11 +21,15 @@ fi
 
 if [[ `git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR status --porcelain` ]]; then
   echo "Local changes detected"
+  # Else check if there are pending changes in dotfiles repo
+  echo "Adding all files..."
+  git_add_msg=$(git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR add .)
+  echo "Commiting files..."
+  git_commit_msg=$(git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR commit -m "auto commit from script")
+  echo "Pushing commit..."
+  git_push_msg=$(git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR push)
 else
   echo "No local changes"
 fi
 
-# Else check if there are pending changes in dotfiles repo
-git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR add .
-git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR commit -m "auto commit from script"
-git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR push
+
