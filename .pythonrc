@@ -42,3 +42,6 @@ from collections import *
 
 # noinspection PyUnresolvedReferences
 from itertools import *
+
+# Add custom python module
+from tools import *
