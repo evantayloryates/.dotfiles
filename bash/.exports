@@ -24,8 +24,4 @@ export TERM_PROGRAM="iTerm"
 # DESC: adds 'subl' command to the active PATH
 PATH=$PATH:${EDITOR_APP}/Contents/SharedSupport/bin
 
-# 
-#
-export PYTHONSTARTUP=$DOTFILES_DIR/.pythonrc.py
-
 export PATH

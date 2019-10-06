@@ -178,4 +178,6 @@ alias set="open -a /Applications/System\ Preferences.app"
 
 # TYPE: alias
 # DESC: cd to github folder
-alias gh="cd $SRC_DIR/github;cl"
+alias gh="cd $SRC_DIR/github; cl"
+
+
