@@ -32,8 +32,8 @@ source $DOTFILES_DIR/bash/.locals 2>/dev/null || printf "No local bash file foun
 export CLICOLOR=1
 
 LGRAY='\033[0;37m'
+RED='\031[0m'
 NC='\033[0m' # No Color
-
 
 # TYPE: misc
 # DESC: Set the empty command to 'ls'
