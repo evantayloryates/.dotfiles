@@ -34,5 +34,6 @@ if [[ `git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR status --porc
 else
   printf "${COLOR_RED}NO${NC}\n"
 fi
+echo "change"
 
 
