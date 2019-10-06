@@ -2,13 +2,13 @@
 
 # Set the directory where you store your python tools
 # Source Code: https://github.com/evantayloryates/python-tools
-PYTHON_TOOLS_DIR=$HOME/src/github/python-tools
+PYTHON_TOOLS_DIR=/some/dir
 
 # Wherever you keep your local source code
-SRC_DIR=$HOME/src
+SRC_DIR=/some/dir
 
 # Set applications directory
-APPS_DIR=/Applications
+APPS_DIR=/some/dir
 
 # Full path for your preferred editor application
-EDITOR_APP=$APPS_DIR/Sublime\ Text.app
+EDITOR_APP=/some/dir
