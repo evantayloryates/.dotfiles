@@ -25,15 +25,11 @@ printf "Local Changes: "
 if [[ `git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR status --porcelain` ]]; then
   printf "${COLOR_GREEN}YES${NC}\n"
   # Else check if there are pending changes in dotfiles repo
-  echo "Adding all files..."
   git_add_msg=$(git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR add .)
-  echo "Commiting files..."
   git_commit_msg=$(git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR commit -m "auto commit from script")
-  echo "Pushing commit..."
   git_push_msg=$(git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR push --quiet)
 else
   printf "${COLOR_RED}NO${NC}\n"
 fi
-echo "change"
 
 
