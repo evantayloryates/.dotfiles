@@ -166,7 +166,7 @@ alias lock="/System/Library/CoreServices/ScreenSaverEngine.app/Contents/MacOS/Sc
 
 # TYPE: alias
 # DESC: open applications directory in Finder
-alias app="open $APPS_DIR"s
+alias app="open $APPS_DIR"
 
 # TYPE: alias
 # DESC: Opens new Chrome window
