@@ -17,6 +17,10 @@ export EDITOR="${EDITOR_APP}/Contents/MacOS/Sublime\ Text"
 export PYTHONSTARTUP=${DOTFILES_DIR}/.pythonrc
 
 # TYPE: export
+# DESC: add 'tools' module to PYTHONPATH
+export PYTHONPATH=$PYTHONPATH:$DOTFILES_DIR/python-tools
+
+# TYPE: export
 # DESC: Used to detect if iTerm is active terminal
 export TERM_PROGRAM="iTerm"
 
