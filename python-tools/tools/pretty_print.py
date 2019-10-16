@@ -1,4 +1,4 @@
-def ap(a, ll=80, ind=False, indent_cnt=8):
+def ap(a, ll=80, ind=True, indent_cnt=0):
     """
     prints the top level of an array by line with indices
     """
@@ -8,8 +8,8 @@ def ap(a, ll=80, ind=False, indent_cnt=8):
         ind_str = ''
         if ind: ind_str = str(i) + ": "
         final_line = indent + ind_str + str(a[i])
-        if len(final_line) > line_limit:
-            final_line = final_line[:(line_limit-3)] + "..."
+        if len(final_line) > ll:
+            final_line = final_line[:(ll-3)] + "..."
         out += final_line + "\n"
 
     # remove the trailing "newline"
