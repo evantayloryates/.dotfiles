@@ -36,3 +36,11 @@ function new {
 }
 
 
+# TYPE: function
+# DESC: Prints Time To First Byte (in milliseconds) 
+function ttfb {
+   curl -o /dev/null -w "Connect: %{time_connect} TTFB: %{time_starttransfer} Total time: %{time_total} \n" $1   
+}
+
+
+
