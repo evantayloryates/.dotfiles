@@ -39,8 +39,10 @@ function new {
 # TYPE: function
 # DESC: Prints Time To First Byte (in milliseconds) 
 function ttfb {
-   out=$(curl -o /dev/null -w "Connect: %{time_connect} TTFB: %{time_starttransfer} Total time: %{time_total} \n" $1 | tail -1)
-   echo $out
+   out=$(curl -o /dev/null -w "Connect: %{time_connect} TTFB: %{time_starttransfer} Total time: %{time_total} \n" $1)
+   num=$($out | awk '{print $4}')
+   t=$(echo $num*1000 | bc)
+   echo ${t%.*}
 }
 
 
