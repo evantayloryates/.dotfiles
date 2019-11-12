@@ -30,7 +30,8 @@ command2()
 {
     if [ ! "$command_flag" ]
     then
-        ls  # Put whatever command(s) you want here.
+        pwd
+        # ls Put whatever command(s) you want here.
     fi
     command_flag=
 }
