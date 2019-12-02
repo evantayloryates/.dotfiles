@@ -35,7 +35,6 @@ function new {
    fi
 }
 
-
 # TYPE: function
 # DESC: Prints Time To First Byte (in milliseconds) 
 function ttfb {
@@ -43,6 +42,12 @@ function ttfb {
    num=$(echo $out | awk '{print $4}')
    t=$(echo $num*1000 | bc)
    echo ${t%.*}
+}
+
+# TYPE: function
+# DESC: Renames the current terminal tab
+function tab {
+   echo -en "\033]0;${1}\a"
 }
 
 
