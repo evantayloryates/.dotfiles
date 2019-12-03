@@ -50,5 +50,14 @@ function tab {
    echo -en "\033]0;${1}\a"
 }
 
-
+# TYPE: function
+# DESC: "GitHub Everything" takes one 1 as the commit message. This function will add all changed files, 
+#       commit the files, and push
+function ghe {
+  if [[ $# -eq 1 ]] ; then
+    git add *
+    git commit "${1}"
+    git push
+   fi
+}
 
