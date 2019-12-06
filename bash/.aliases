@@ -180,4 +180,15 @@ alias set="open -a /Applications/System\ Preferences.app"
 # DESC: cd to github folder
 alias gh="cd $SRC_DIR/github; cl"
 
+# TYPE: alias
+# DESC: open src folder
+alias os="o ~/src"
+
+# TYPE: alias
+# DESC: open github folder
+alias og="o ~/src/github"
+
+# TYPE: alias
+# DESC: open Desktop folder
+alias os="o ~/Desktop"
 
