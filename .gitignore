@@ -1,3 +1,4 @@
 .locals
 .local_configs
 .DS_Store
+__pycache__
