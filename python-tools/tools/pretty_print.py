@@ -2,6 +2,7 @@ def ap(a, ll=80, ind=True, indent_cnt=0):
     """
     prints the top level of an array by line with indices
     """
+    a = list(a) # in case the type isn't strictly a list
     out = ""
     for i in range(len(a)):
         indent = (' ' * indent_cnt)
@@ -18,7 +19,12 @@ def ap(a, ll=80, ind=True, indent_cnt=0):
 def dp(d):
     """
     prints the key-value pairs of python dict
+    prints number values first in order (small->great)
     """
+    try: # If all vals are integers, sort them
+        d = {k: v for k, v in sorted(d.items(), key=lambda item: item[1])}
+    except: pass
+
     out = ""
     for key in d.keys():
         value = d.get(key)
