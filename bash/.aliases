@@ -9,6 +9,10 @@ alias dotfiles="subl $DOTFILES_DIR"
 alias pro="subl $HOME/.bash_profile"
 
 # TYPE: alias
+# DESC: runs Python with interpreter
+alias pi="python -i"
+
+# TYPE: alias
 # DESC: open dofiles directory in Sublime
 alias colors="$DOTFILES_DIR/scripts/show_colors.sh"
 
