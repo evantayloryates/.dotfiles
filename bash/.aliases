@@ -12,6 +12,8 @@ alias pro="subl $HOME/.bash_profile"
 # DESC: runs Python with interpreter
 alias pi="python -i"
 
+# TYPE: alias
+# DESC: adds headers to 'ps' command
 alias ps="ps -ef | head -1; ps"
 
 # TYPE: alias
