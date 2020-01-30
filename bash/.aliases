@@ -133,20 +133,24 @@ alias s="cd $SRC_DIR; cl; ls"
 alias o="open ."
 
 # TYPE: alias
-# DESC: opens the current directory in Finder
+# DESC: Get status of current GH repo
 alias gs="git status"
 
 # TYPE: alias
-# DESC: opens the current directory in Finder
+# DESC: add files to GH working tree
 alias ga="git add"
 
 # TYPE: alias
-# DESC: opens the current directory in Finder
+# DESC: commit git changes with message
 alias gc="git commit -m"
 
 # TYPE: alias
-# DESC: opens the current directory in Finder
+# DESC: push changes from local repo to remote repo
 alias gp="git push"
+
+# TYPE: alias
+# DESC: pull remote changes to local repo
+alias gpu="git pull"
 
 # TYPE: alias
 # DESC: delete previously tracked files
