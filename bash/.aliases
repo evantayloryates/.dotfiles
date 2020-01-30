@@ -149,6 +149,10 @@ alias gc="git commit -m"
 alias gp="git push"
 
 # TYPE: alias
+# DESC: delete previously tracked files
+alias gd="git add -u :/"
+
+# TYPE: alias
 # DESC: prints out the current environment variables alphabetically
 alias env="env | sort"
 
