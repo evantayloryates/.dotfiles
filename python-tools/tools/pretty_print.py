@@ -64,7 +64,7 @@ def pd(obj):
     items = []
     for attr in attrs:
         value = getattr(obj, attr)
-        val_type = ptype(value, pr=False)
+        val_type = pt(value, pr=False)
         val_str = ": " +  str(value)
         if val_type in ["function", "wrapper"]: val_str = ""
         bundle = (val_type, attr, val_str)
@@ -88,4 +88,5 @@ def pd(obj):
 
         line = ( type_str + attr + val_str)
         print (line)
-    print ("TYPE: %s" % ptype(obj, pr=False))
+
+    print ("TYPE: %s" % pt(obj, pr=False))
