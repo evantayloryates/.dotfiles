@@ -4,6 +4,8 @@ git_pull_msg=$(git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR pull 
 printf "${COLOR_WHITE}Remote Changes: "
 if [ "$git_pull_msg" == "Already up to date." ]; then
     printf "${COLOR_RED}NO${COLOR_WHITE}\n"
+elif [ "$git_pull_msg" == "Already up-to-date." ]; then
+    printf "${COLOR_RED}NO${COLOR_WHITE}\n"
 else
 	printf "${COLOR_GREEN}YES${COLOR_WHITE}\n"
 	printf "Merge Safe: "
