@@ -38,7 +38,7 @@ alias exp="open $DOTFILES_DIR/bash/.exports"
 
 # TYPE: alias
 # DESC: Open local bash file
-alias loc="subl $DOTFILES_DIR/bash/.locals 2>/dev/null || echo no"
+alias loc="subl $DOTFILES_DIR/bash/.locals 2>/dev/null || vim $DOTFILES_DIR/bash/.locals"
 
 # TYPE: alias
 # DESC: quick open openers script
@@ -86,7 +86,7 @@ alias sd="sudo "
 
 # TYPE: alias
 # DESC: open .init
-alias init="subl $DOTFILES_DIR/.init"
+alias init="subl $DOTFILES_DIR/.init 2>/dev/null || vim $DOTFILES_DIR/.init"
 
 # TYPE: alias
 # DESC: change to .dotfiles directory
