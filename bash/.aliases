@@ -78,7 +78,7 @@ alias lf="ls -p | grep -v /"
 
 # TYPE: alias
 # DESC: ls sorted by name
-alias ls="clear;ls -alhG"
+alias ls="clear;ls -alhG --color=auto || ls -alhG"
 
 # TYPE: alias
 # DESC: allow use of 'sudo' with aliases
