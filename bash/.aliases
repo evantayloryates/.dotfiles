@@ -38,7 +38,7 @@ alias exp="open $DOTFILES_DIR/bash/.exports"
 
 # TYPE: alias
 # DESC: Open local bash file
-alias loc="subl $DOTFILES_DIR/bash/.locals"
+alias loc="subl $DOTFILES_DIR/bash/.locals 2>/dev/null || echo no"
 
 # TYPE: alias
 # DESC: quick open openers script
