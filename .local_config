@@ -2,10 +2,10 @@
 
 
 # Wherever you keep your local source code
-SRC_DIR=/some/dir
+SRC_DIR=$HOME/src
 
 # Set applications directory
-APPS_DIR=/some/dir
+APPS_DIR=$HOME/apps
 
 # Full path for your preferred editor application
-EDITOR_APP=/some/dir
+EDITOR_APP=/usr/bin/vim
