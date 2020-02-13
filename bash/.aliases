@@ -21,6 +21,10 @@ alias pi="python -i"
 alias ps="ps -ef | head -1; ps"
 
 # TYPE: alias
+# DESC: Open the Python Regular Expression cheat sheet
+alias re="subl $DOTFILES_DIR/python-tools/re_reference.py"
+
+# TYPE: alias
 # DESC: open dofiles directory in Sublime
 alias colors="$DOTFILES_DIR/scripts/show_colors.sh"
 

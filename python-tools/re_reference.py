@@ -3,4 +3,5 @@
 import re
 
 # Up to but not including
-re.match(r'(?:(?!char).)*', 'up to herechar')
+char = '['
+print(re.match(r'(?:(?!\%s).)*' % char, 'up to here[char]').group())
