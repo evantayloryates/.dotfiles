@@ -24,6 +24,10 @@ export PYTHONPATH=$PYTHONPATH:$DOTFILES_DIR/python-tools
 # DESC: Used to detect if iTerm is active terminal
 export TERM_PROGRAM="iTerm"
 
+# TYPE: export
+# DESC: Python command to get the active script's directory
+export SCRIPT_DIR="os.path.dirname(os.path.realpath(__file__))"
+
 # TYPE: path
 # DESC: adds 'subl' command to the active PATH
 PATH=$PATH:${EDITOR_APP}/Contents/SharedSupport/bin
