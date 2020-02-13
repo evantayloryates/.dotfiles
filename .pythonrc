@@ -42,3 +42,6 @@ from collections import *
 
 # noinspection PyUnresolvedReferences
 from itertools import *
+
+# Add python-tools module
+from tools import *
