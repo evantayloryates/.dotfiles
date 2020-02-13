@@ -2,7 +2,11 @@
 
 # TYPE: alias
 # DESC: open dofiles directory in Sublime
-alias dotfiles="subl $DOTFILES_DIR"
+alias dots="subl $DOTFILES_DIR"
+
+# TYPE: alias
+# DESC: change to .dotfiles directory
+alias dot="cd $DOTFILES_DIR; cl; ls"
 
 # TYPE: alias
 # DESC: open dofiles directory in Sublime
@@ -87,10 +91,6 @@ alias sd="sudo "
 # TYPE: alias
 # DESC: open .init
 alias init="subl $DOTFILES_DIR/.init 2>/dev/null || vim $DOTFILES_DIR/.init"
-
-# TYPE: alias
-# DESC: change to .dotfiles directory
-alias dot="cd $DOTFILES_DIR; cl; ls"
 
 # TYPE: alias
 # DESC: open .pythonrc
