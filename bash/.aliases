@@ -219,3 +219,7 @@ alias od="o ~/Desktop"
 # TYPE: alias
 # DESC: use 'command' to avoid using aliases and functions
 alias co="command"
+
+# TYPE: alias
+# DESC: use 'command' to avoid using aliases and functions
+alias condarc="subl ~/.condarc"
