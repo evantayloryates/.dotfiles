@@ -40,42 +40,28 @@ def dp(d):
 # PRETTY TYPE
 def pt(obj, pr=True):
     
+    replace_dict = {
+        'builtin_function_or_method': 'fn/method'
+    }
+
     str_type = str(type(obj))
 
     if str_type.count('\'') == 2:
-        return re.findall(r"'([^']*)", str_type)[0]
+        out_type = re.findall(r"'([^']*)", str_type)[0]
+        if out_type in replace_dict:
+            out_type = replace_dict[out_type]
+        return out_type
     else:
         raise Warning(f"Can't parse type: {str_type}")
-    # print(f'{attr} : {obj} : {type(obj)}')
-    # simplified = {
-    #     "builtin_function_or_method" : "function",
-    #     "method-wrapper" : "wrapper",
-    # }
-    # str_type = str(type(obj))
-    # str_type = str_type.replace("<type '","")
-    # str_type = str_type[:-2]
-    # try: str_type = simplified[str_type]
-    # except: pass
-    # if pr: print (str_type)
-    # else: return (str_type)
-
-
-def filterFunctions(items):
-    values = []
-    non_values = []
-    for item in items:
-        if item in ["function", "wrapper"]:
-            non_values += [item]
-        else:
-            values += [item]
-    return values, non_values
 
 # PRETTY DIR
-def pd(obj, ind=False, all=False):
+def pd(obj, ind_cnt=2, every=False):
     """
     runs "dir" function on the input object and pretty prints the output
     """
-    global r
+    
+    indent = " " * ind_cnt
+
     attrs = dir(obj)
     primatives = []
     customs = []
@@ -84,54 +70,46 @@ def pd(obj, ind=False, all=False):
         
         # Omit Python built_in functions and properties (unless
         # 'all' optional arg is set to True) 
-        # if attr[:2] == '__': continue
+        if attr[:2] == '__' and not every: continue
         
         val = getattr(obj, attr)
         
         is_custom = isclass(val)
         
         attr_type = pt(val, pr=False)
-        
-        # if re.search('method', str(val)): 
-        #     attr_type = 'method'
-        #     try:
-        #         val = val()
-        #     except:
-        #         val = 'Output N/A'
+
+        try:
+            val = val()
+        except:
+            if type(val) not in [list, int, str, float, bool]:
+                val = ""
 
         if is_custom: customs += [(attr_type, attr, val)]
         else: primatives += [(attr_type, attr, val)] 
         
-    primatives.sort()
-    customs.sort()
-    print('PRIMATIVES:\n')
-    for i in range(len(primatives)):
-        (attr_type, attr, val) = primatives[i]
-        print(f"{attr} : {attr_type} : {attr_val}")
+    primatives.sort(key=lambda item:len(item[0]))
+    customs.sort(key=lambda item:len(item[0]))
 
-pd(dt)
-        # val_str = ": " +  str(value)
-        # if val_type in ["function", "wrapper"]: val_str = ""
-        # bundle = (val_type, attr, val_str)
-        # items += [bundle]
+    output_lists = [primatives, customs]
     
-    # values, non_values = filterFunctions(items)
-    # values.sort()
-    # items = non_values + values
-    
-    # type_set = list(set(map(lambda x: x[0], items)))
-    # type_set.sort(key=len)
-    # max_len = len(type_set[-1])
+    print('\n', end="")
+    for i in range(len(output_lists)):
 
-    # for bundle in items:
-    #     val_type, attr, value = bundle
-    #     val_str = str(value)
-    #     val_str = val_str.replace("\n","...")
-    #     if len(val_str) > 78: val_str = val_str[:78] + "..."
-    #     extra = " " * (max_len - len(val_type))
-    #     type_str = "(" + val_type + ") " + extra
+        l = output_lists[i]
 
-    #     line = ( type_str + attr + val_str)
-        # print (line)
+        # If there are no items in the list, continue
+        if not l: continue
+        
+        if i: print('CUSTOMS:')
+        else:print('PRIMATIVES:')
 
-    # print ("TYPE: %s" % pt(obj, pr=False))
+        attr_max = len(max(l, key=lambda item: len(item[1]))[1])
+        attr_type_max = len(max(l, key=lambda item: len(item[0]))[0])
+
+        for attr_type, attr, val in l:
+            
+            attr_pad = " " * (attr_max - len(attr))
+            attr_type_pad = " " * (attr_type_max - len(attr_type))
+
+            print(indent + f"{attr}" + attr_pad + f" : {attr_type}" + attr_type_pad + f" : {val}")
+        print('\n', end="")
