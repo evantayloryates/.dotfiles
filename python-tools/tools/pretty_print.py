@@ -1,3 +1,8 @@
+import re
+from inspect import isclass
+
+import datetime as dt
+
 def ap(a, ll=1000, ind=True, indent_cnt=0):
     """
     prints the top level of an array by line with indices
@@ -32,18 +37,27 @@ def dp(d):
         out += final_line
     print (out)
 
+# PRETTY TYPE
 def pt(obj, pr=True):
-    simplified = {
-        "builtin_function_or_method" : "function",
-        "method-wrapper" : "wrapper",
-    }
+    
     str_type = str(type(obj))
-    str_type = str_type.replace("<type '","")
-    str_type = str_type[:-2]
-    try: str_type = simplified[str_type]
-    except: pass
-    if pr: print (str_type)
-    else: return (str_type)
+
+    if str_type.count('\'') == 2:
+        return re.findall(r"'([^']*)", str_type)[0]
+    else:
+        raise Warning(f"Can't parse type: {str_type}")
+    # print(f'{attr} : {obj} : {type(obj)}')
+    # simplified = {
+    #     "builtin_function_or_method" : "function",
+    #     "method-wrapper" : "wrapper",
+    # }
+    # str_type = str(type(obj))
+    # str_type = str_type.replace("<type '","")
+    # str_type = str_type[:-2]
+    # try: str_type = simplified[str_type]
+    # except: pass
+    # if pr: print (str_type)
+    # else: return (str_type)
 
 
 def filterFunctions(items):
@@ -56,37 +70,68 @@ def filterFunctions(items):
             values += [item]
     return values, non_values
 
-def pd(obj):
+# PRETTY DIR
+def pd(obj, ind=False, all=False):
     """
     runs "dir" function on the input object and pretty prints the output
     """
+    global r
     attrs = dir(obj)
-    items = []
+    primatives = []
+    customs = []
+    
     for attr in attrs:
-        value = getattr(obj, attr)
-        val_type = pt(value, pr=False)
-        val_str = ": " +  str(value)
-        if val_type in ["function", "wrapper"]: val_str = ""
-        bundle = (val_type, attr, val_str)
-        items += [bundle]
+        
+        # Omit Python built_in functions and properties (unless
+        # 'all' optional arg is set to True) 
+        # if attr[:2] == '__': continue
+        
+        val = getattr(obj, attr)
+        
+        is_custom = isclass(val)
+        
+        attr_type = pt(val, pr=False)
+        
+        # if re.search('method', str(val)): 
+        #     attr_type = 'method'
+        #     try:
+        #         val = val()
+        #     except:
+        #         val = 'Output N/A'
+
+        if is_custom: customs += [(attr_type, attr, val)]
+        else: primatives += [(attr_type, attr, val)] 
+        
+    primatives.sort()
+    customs.sort()
+    print('PRIMATIVES:\n')
+    for i in range(len(primatives)):
+        (attr_type, attr, val) = primatives[i]
+        print(f"{attr} : {attr_type} : {attr_val}")
+
+pd(dt)
+        # val_str = ": " +  str(value)
+        # if val_type in ["function", "wrapper"]: val_str = ""
+        # bundle = (val_type, attr, val_str)
+        # items += [bundle]
     
-    values, non_values = filterFunctions(items)
-    values.sort()
-    items = non_values + values
+    # values, non_values = filterFunctions(items)
+    # values.sort()
+    # items = non_values + values
     
-    type_set = list(set(map(lambda x: x[0], items)))
-    type_set.sort(key=len)
-    max_len = len(type_set[-1])
+    # type_set = list(set(map(lambda x: x[0], items)))
+    # type_set.sort(key=len)
+    # max_len = len(type_set[-1])
 
-    for bundle in items:
-        val_type, attr, value = bundle
-        val_str = str(value)
-        val_str = val_str.replace("\n","...")
-        if len(val_str) > 78: val_str = val_str[:78] + "..."
-        extra = " " * (max_len - len(val_type))
-        type_str = "(" + val_type + ") " + extra
+    # for bundle in items:
+    #     val_type, attr, value = bundle
+    #     val_str = str(value)
+    #     val_str = val_str.replace("\n","...")
+    #     if len(val_str) > 78: val_str = val_str[:78] + "..."
+    #     extra = " " * (max_len - len(val_type))
+    #     type_str = "(" + val_type + ") " + extra
 
-        line = ( type_str + attr + val_str)
-        print (line)
+    #     line = ( type_str + attr + val_str)
+        # print (line)
 
-    print ("TYPE: %s" % pt(obj, pr=False))
+    # print ("TYPE: %s" % pt(obj, pr=False))
