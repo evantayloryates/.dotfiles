@@ -1,4 +1,4 @@
-def ap(a, ll=80, ind=True, indent_cnt=0):
+def ap(a, ll=1000, ind=True, indent_cnt=0):
     """
     prints the top level of an array by line with indices
     """
