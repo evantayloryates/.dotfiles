@@ -40,9 +40,14 @@ alias fns="open $DOTFILES_DIR/bash/.functions"
 # DESC: quick open aliases script
 alias als="open $DOTFILES_DIR/bash/.aliases"
 
+
 # TYPE: alias
 # DESC: quick open exports script
 alias exp="open $DOTFILES_DIR/bash/.exports"
+
+# TYPE: alias
+# DESC: quick open new file in Sublime
+alias new="subl -n"
 
 # TYPE: alias
 # DESC: Open local bash file

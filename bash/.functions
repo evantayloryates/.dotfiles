@@ -27,7 +27,6 @@ function py2 {
 # DESC: Creates and openes new file
 function new {
   if [[ $# -eq 0 ]] ; then
-    cd ${NVALT_DIR}
     subl -n
    else
     touch $1
