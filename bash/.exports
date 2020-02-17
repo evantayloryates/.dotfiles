@@ -2,7 +2,7 @@
 
 # TYPE: export
 # DESC: sets the main terminal prompt displayed on every line
-export PS1='\[`tput setaf 014`\]\h\[`tput setaf 255`\]:$PWD\n\[`tput setaf 200`\]\w \[`tput sgr0`\]\n$ '
+export PS1='\[`tput setaf 014`\]\h\[`tput setaf 200`\]\w \[`tput sgr0`\]\n$ '
 
 # TYPE: export
 # DESC: sets the continuation string for multi-line commands
