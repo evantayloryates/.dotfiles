@@ -93,6 +93,8 @@ def pd(obj, ind_cnt=2, every=False):
     output_lists = [primatives, customs]
     
     print('\n', end="")
+    print(f'TYPE: {pt(obj)}')
+    print('\n', end="")
     for i in range(len(output_lists)):
 
         l = output_lists[i]
