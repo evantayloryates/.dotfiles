@@ -40,7 +40,6 @@ alias fns="open $DOTFILES_DIR/bash/.functions"
 # DESC: quick open aliases script
 alias als="open $DOTFILES_DIR/bash/.aliases"
 
-
 # TYPE: alias
 # DESC: quick open exports script
 alias exp="open $DOTFILES_DIR/bash/.exports"
@@ -168,6 +167,10 @@ alias gp="git push"
 # TYPE: alias
 # DESC: pull remote changes to local repo
 alias gpu="git pull"
+
+# TYPE: alias
+# DESC: pull remote changes to local repo
+alias gi="vim $(git rev-parse --show-toplevel)/.gitignore"
 
 # TYPE: alias
 # DESC: delete previously tracked files
