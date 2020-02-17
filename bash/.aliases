@@ -171,7 +171,8 @@ alias gpu="git pull"
 
 # TYPE: alias
 # DESC: delete previously tracked files
-alias gd="git add -u :/"
+alias gd="git rm $(git ls-files --deleted)"
+# alias gd="git add -u :/"
 
 # TYPE: alias
 # DESC: prints out the current environment variables alphabetically
