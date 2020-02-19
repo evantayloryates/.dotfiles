@@ -169,13 +169,9 @@ alias gp="git push"
 alias gpu="git pull"
 
 # TYPE: alias
-# DESC: pull remote changes to local repo
-alias gi="vim $(git rev-parse --show-toplevel)/.gitignore"
-
-# TYPE: alias
 # DESC: delete previously tracked files
-alias gd="git rm $(git ls-files --deleted)"
-# alias gd="git add -u :/"
+# alias gd="git rm $(git ls-files --deleted)"
+alias gd="git add -u :/"
 
 # TYPE: alias
 # DESC: prints out the current environment variables alphabetically
