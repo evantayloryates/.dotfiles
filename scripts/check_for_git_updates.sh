@@ -1,6 +1,6 @@
 # Check for new files
 git_pull_msg=$(git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR pull 2>&1)
-
+printf "${git_pull_msg}"
 printf "${COLOR_WHITE}Remote Changes: "
 if [ "$git_pull_msg" == "Already up to date." ]; then
     printf "${COLOR_RED}NO${COLOR_WHITE}\n"
