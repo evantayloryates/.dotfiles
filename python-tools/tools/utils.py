@@ -136,7 +136,7 @@ def mem():
 # BYTE SIZE
 def bsize(obj):
     raw_bytes = get_size(obj)
-    get_size(raw_bytes)
+    pbytes(get_size(raw_bytes))
 
 # HELPER FOR bsize
 def get_size(obj, seen=None):
