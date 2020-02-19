@@ -135,13 +135,11 @@ def mem():
     pbytes(process.memory_info().rss)
 
 # BYTE SIZE
-def bsize(obj):
-    if type(obj) == list:
+def mem(obj):
+    raw_bytes = asizeof(obj)
+    pbytes(raw_bytes)
 
-    raw_bytes = get_size(obj)
-    pbytes(asizeof(raw_bytes))
-
-
+# DELETE LINE
 def dline():
     CURSOR_UP_ONE = '\x1b[1A'
     ERASE_LINE = '\x1b[2K'
