@@ -1,8 +1,11 @@
 import re
+import os
+import sys
+import psutil
+import datetime as dt
 from inspect import isclass
 
-import datetime as dt
-
+# ARRAY PRINT
 def ap(a, ll=1000, ind=True, indent_cnt=0):
     """
     prints the top level of an array by line with indices
@@ -21,6 +24,7 @@ def ap(a, ll=1000, ind=True, indent_cnt=0):
     # remove the trailing "newline"
     print (out[:-1])
 
+# DICT PRINT
 def dp(d):
     """
     prints the key-value pairs of python dict
@@ -115,3 +119,42 @@ def pd(obj, ind_cnt=2, every=False):
 
             print(indent + f"{attr}" + attr_pad + f" : {attr_type}" + attr_type_pad + f" : {val}")
         print('\n', end="")
+
+# PRETTY BYTES
+def pbytes(in_bytes):
+    mb = round(raw_bytes/1000000.,2)
+    kb = round(raw_bytes/1000.,2)
+    if mb: print (f'{mb}MB')
+    elif kb: print (f'{kb}KB')
+    else: print(f'{raw_bytes}B')
+
+# PRINT PROCESS MEMORY
+def mem():
+    process = psutil.Process(os.getpid())
+    pbytes(process.memory_info().rss)
+
+# BYTE SIZE
+def bsize(obj):
+    raw_bytes = get_size(obj)
+    print_bytes(raw_bytes)
+
+# HELPER FOR bsize
+def get_size(obj, seen=None):
+    """Recursively finds size of objects"""
+    size = sys.getsizeof(obj)
+    if seen is None:
+        seen = set()
+    obj_id = id(obj)
+    if obj_id in seen:
+        return 0
+    # Important mark as seen *before* entering recursion to gracefully handle
+    # self-referential objects
+    seen.add(obj_id)
+    if isinstance(obj, dict):
+        size += sum([get_size(v, seen) for v in obj.values()])
+        size += sum([get_size(k, seen) for k in obj.keys()])
+    elif hasattr(obj, '__dict__'):
+        size += get_size(obj.__dict__, seen)
+    elif hasattr(obj, '__iter__') and not isinstance(obj, (str, bytes, bytearray)):
+        size += sum([get_size(i, seen) for i in obj])
+    return size
