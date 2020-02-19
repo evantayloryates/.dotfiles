@@ -1,6 +1,6 @@
 # Check for new files
 git_pull_msg=$(git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR pull 2>&1)
-printf "${git_pull_msg}"
+
 printf "${COLOR_WHITE}Remote Changes: "
 if [ "$git_pull_msg" == "Already up to date." ]; then
     printf "${COLOR_RED}NO${COLOR_WHITE}\n"
@@ -27,8 +27,11 @@ printf "Local Changes: "
 if [[ `git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR status --porcelain` ]]; then
   printf "${COLOR_GREEN}YES${NC}\n"
   # Else check if there are pending changes in dotfiles repo
+  printf "ADD"
   git_add_msg=$(git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR add .)
+  printf "COMMIT"
   git_commit_msg=$(git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR commit -m "auto commit from script")
+  printf "PUSH"
   git_push_msg=$(git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR push --quiet)
 else
   printf "${COLOR_RED}NO${NC}\n"
