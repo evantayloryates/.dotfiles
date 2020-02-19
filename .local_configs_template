@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Wherever you keep your local source code
+SRC_DIR=<src-dir-here>
+
+# Set applications directory
+APPS_DIR=<apps-dir-here>
+
+# Full path for your preferred editor application
+EDITOR_APP=<path-to-editor-app-here>
+
