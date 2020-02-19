@@ -10,3 +10,4 @@ APPS_DIR=<apps-dir-here>
 EDITOR_APP=<path-to-editor-app-here>
 
 EDITOR_COMMAND=<command-for-opening-editor>
+test change
