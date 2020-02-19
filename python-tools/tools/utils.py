@@ -122,8 +122,8 @@ def pd(obj, ind_cnt=2, every=False):
 
 # PRETTY BYTES
 def pbytes(in_bytes):
-    mb = round(raw_bytes/1000000.,2)
-    kb = round(raw_bytes/1000.,2)
+    mb = round(in_bytes/1000000.,2)
+    kb = round(in_bytes/1000.,2)
     if mb: print (f'{mb}MB')
     elif kb: print (f'{kb}KB')
     else: print(f'{raw_bytes}B')
