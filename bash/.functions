@@ -67,3 +67,9 @@ function gi {
   vim "${repo_dir}/.gitignore"
 }
 
+#! /bin/bash
+exec > >(sed 's/^/test: /')
+# exec 2> >(sed 's/^/foo: (stderr) /' >&2)
+echo foo
+# echo bar >&2
+date
