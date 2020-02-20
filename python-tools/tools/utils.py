@@ -7,16 +7,16 @@ from inspect import isclass
 from pympler.asizeof import asizeof
 
 # ARRAY PRINT
-def ap(a, ll=1000, ind=True, indent_cnt=0):
+def ap(a, ll=1000, index=True, ind=0):
     """
     prints the top level of an array by line with indices
     """
     a = list(a) # in case the type isn't strictly a list
     out = ""
     for i in range(len(a)):
-        indent = (' ' * indent_cnt)
+        indent = (' ' * ind)
         ind_str = ''
-        if ind: ind_str = str(i) + ": "
+        if index: ind_str = str(i) + ": "
         final_line = indent + ind_str + str(a[i])
         if len(final_line) > ll:
             final_line = final_line[:(ll-3)] + "..."
