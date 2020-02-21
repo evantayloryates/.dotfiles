@@ -104,7 +104,7 @@ EXEC 01;31
 .css    38;5;046 # Cascading Style Sheet file
 .htm    38;5;046 # HTML file
 .html   38;5;046 # HTML file
-.js     01;04;38;5;26;48;5;240 # JavaScript file
+.js     01;04;38;5;26;48;5;255 # JavaScript file
 .jsp    38;5;046 # Java Server Page file
 .less   38;5;046 #
 .part   38;5;046 # Partially downloaded file
