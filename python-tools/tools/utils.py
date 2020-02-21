@@ -121,6 +121,14 @@ def pd(obj, ind_cnt=2, every=False):
             print(indent + f"{attr}" + attr_pad + f" : {attr_type}" + attr_type_pad + f" : {val}")
         print('\n', end="")
 
+# PRETTY DATE TIME
+def pdt(dt_in=None, r=True):
+    dt_obj = dt.datetime.now()
+    if dt_in: dt_obj = dt_in
+    pstr = dt_obj.strftime("%Y-%m-%d %I:%M.%S %p")
+    if r: return pstr
+    print(pstr)
+
 # PRETTY BYTES
 def pbytes(in_bytes):
     mb = round(in_bytes/1000000.,2)
