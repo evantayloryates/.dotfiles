@@ -133,7 +133,8 @@ EXEC 01;31
 .md     38;5;015 # Plain text file
 .txt    38;5;015 # Plain text file
 .log    38;5;015 # Log file
-.rst    38;5;015 # Log file
+.rst    38;5;015 # Restructured Text file (used primarily by Python)
+.pdf    38;5;015 # PDF file
 
 # RAW DATA
 .csv    38;5;051 # Comma separated value file
@@ -190,7 +191,6 @@ EXEC 01;31
 # .doc    # Microsoft Word file
 # .docx   # Microsoft Word file
 # .odt    # OpenOffice Writer document file
-# .pdf    # PDF file
 # .rtf    # Rich Text Format
 # .tex    # A LaTeX document file
 # .wks    # Microsoft Works file
