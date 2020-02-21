@@ -58,7 +58,8 @@ def pt(obj, pr=True):
             out_type = replace_dict[out_type]
         
         # If print ('pr') is set to False, return the pretty type
-        if not pr: return out_type
+        if not pr: 
+            return out_type
         
         # else print the pretty type
         print(out_type)
@@ -102,10 +103,9 @@ def pd(obj, ind_cnt=2, every=False):
     customs.sort(key=lambda item:len(item[0]))
 
     output_lists = [primatives, customs]
-    
-    print('\n', end="")
-    print(f'TYPE: {pt(obj)}')
-    print('\n', end="")
+    print()
+    print(f'TYPE: {pt(obj, pr=False)}')
+    print()
     for i in range(len(output_lists)):
 
         l = output_lists[i]
