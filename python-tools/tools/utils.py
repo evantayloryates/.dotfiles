@@ -68,6 +68,7 @@ def pt(obj, pr=True):
 
 # PRETTY DIR (Pretty print all props of an object)
 # TODO: print out number of args if function
+# TODO: restrict size of columns to prevent large wrapped lines
 def pd(obj, ind_cnt=2, all=False):
     """
     runs "dir" function on the input object and pretty prints the output
