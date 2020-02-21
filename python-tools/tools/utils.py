@@ -67,7 +67,8 @@ def pt(obj, pr=True):
         raise Warning(f"Can't parse type: {str_type}")
 
 # PRETTY DIR (Pretty print all props of an object)
-def pd(obj, ind_cnt=2, every=False):
+# TODO: print out number of args if function
+def pd(obj, ind_cnt=2, all=False):
     """
     runs "dir" function on the input object and pretty prints the output
     """
@@ -82,7 +83,7 @@ def pd(obj, ind_cnt=2, every=False):
         
         # Omit Python built_in functions and properties (unless
         # 'all' optional arg is set to True) 
-        if attr[:2] == '__' and not every: continue
+        if attr[:2] == '__' and not all: continue
         
         val = getattr(obj, attr)
         
