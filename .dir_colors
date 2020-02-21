@@ -134,13 +134,15 @@ EXEC 01;31
 .dat    38;5;051 # Data file
 .db     38;5;051 # Database file
 .dbf    38;5;051 # Database file
-.log    38;5;051 # Log file
 .mdb    38;5;051 # Microsoft Access database file
 .sav    38;5;051 # Save file (e.g., game save file)
 .sql    38;5;051 # SQL database file
 .txt    38;5;051 # Plain text file
 .xml    38;5;051 # XML file
 .yml    38;5;051
+
+# LOGS
+.log    38;5;015 # Log file
 
 # ARCHIVED DATA
 .dmg    38;5;226 #
