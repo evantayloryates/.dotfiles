@@ -56,14 +56,16 @@ def pt(obj, pr=True):
         out_type = re.findall(r"'([^']*)", str_type)[0]
         if out_type in replace_dict:
             out_type = replace_dict[out_type]
+        
         # If print ('pr') is set to False, return the pretty type
         if not pr: return out_type
+        
         # else print the pretty type
         print(out_type)
     else:
         raise Warning(f"Can't parse type: {str_type}")
 
-# PRETTY DIR
+# PRETTY DIR (Pretty print all props of an object)
 def pd(obj, ind_cnt=2, every=False):
     """
     runs "dir" function on the input object and pretty prints the output
