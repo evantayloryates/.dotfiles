@@ -85,168 +85,167 @@ EXEC 01;31
 # If you use DOS-style suffixes, you may want to uncomment the following:
 
 # EXECUTABLES
-.apk    # Android package file
-.bat    # Batch file
-.bin    # Binary file
-.cmd    #  
-.com    # MS-DOS command file
-.exe    # Executable file
-.gadget # Windows gadget
-.sh     # Bash shell script
-.wsf    # Windows Script File
-
-# FONTS
-.fnt    # Windows font file
-.fon    # Generic font file
-.otf    # Open type font file
-.ttf    # TrueType font file
+.apk    38;5;196 # Android package file
+.bat    38;5;196 # Batch file
+.bin    38;5;196 # Binary file
+.cmd    38;5;196 #  
+.com    38;5;196 # MS-DOS command file
+.exe    38;5;196 # Executable file
+.gadget 38;5;196 # Windows gadget
+.sh     38;5;196 # Bash shell script
+.wsf    38;5;196 # Windows Script File
 
 # INTERNET
-.asp    # Active Server Page file
-.aspx   # Active Server Page file
-.cer    # Internet security certificate
-.cfm    # ColdFusion Markup file
-.cgi    # Perl script file
-.css    # Cascading Style Sheet file
-.htm    # HTML file
-.html   # HTML file
-.js     # JavaScript file
-.jsp    # Java Server Page file
-.less
-.part   # Partially downloaded file
-.php    # PHP file
-.pl     # Perl script file
-.rss    # RSS file
-.sass
-.scss
-.ts     # TypeScript file
-.xhtml  # XHTML file
+.asp    38;5;046 # Active Server Page file
+.aspx   38;5;046 # Active Server Page file
+.cer    38;5;046 # Internet security certificate
+.cfm    38;5;046 # ColdFusion Markup file
+.cgi    38;5;046 # Perl script file
+.css    38;5;046 # Cascading Style Sheet file
+.htm    38;5;046 # HTML file
+.html   38;5;046 # HTML file
+.js     38;5;046 # JavaScript file
+.jsp    38;5;046 # Java Server Page file
+.less   38;5;046 #
+.part   38;5;046 # Partially downloaded file
+.php    38;5;046 # PHP file
+.pl     38;5;046 # Perl script file
+.rss    38;5;046 # RSS file
+.sass   38;5;046 #
+.scss   38;5;046 #
+.ts     38;5;046 # TypeScript file
+.xhtml  38;5;046 # XHTML file
 
 # SOURCE CODE
-.c     38;5;201 # C and C++ source code file
-.class 38;5;201 # Java class file
-.cpp   38;5;201 # C++ source code file
-.cs    38;5;201 # Visual C# source code file
-.h     38;5;201 # C, C++, and Objective-C header file
-.java  38;5;201 # Java Source code file
-.pm    38;5;201 #
-.py    38;5;201 # Python file
-.swift 38;5;201 # Swift source code file
-.tt    38;5;201 #
-.vb    38;5;201 # Visual Basic file
+.c      38;5;201 # C and C++ source code file
+.class  38;5;201 # Java class file
+.cpp    38;5;201 # C++ source code file
+.cs     38;5;201 # Visual C# source code file
+.h      38;5;201 # C, C++, and Objective-C header file
+.java   38;5;201 # Java Source code file
+.pm     38;5;201 #
+.py     38;5;201 # Python file
+.swift  38;5;201 # Swift source code file
+.tt     38;5;201 #
+.vb     38;5;201 # Visual Basic file
 
 # RAW DATA
-.csv 38;5;226    # Comma separated value file
-.dat 38;5;226    # Data file
-.db  38;5;226    # Database file
-.dbf 38;5;226    # Database file
-.log 38;5;226    # Log file
-.mdb 38;5;226    # Microsoft Access database file
-.sav 38;5;226    # Save file (e.g., game save file)
-.sql 38;5;226    # SQL database file
-.txt 38;5;226    # Plain text file
-.xml 38;5;226    # XML file
-.yml 38;5;226
+.csv    38;5;226 # Comma separated value file
+.dat    38;5;226 # Data file
+.db     38;5;226 # Database file
+.dbf    38;5;226 # Database file
+.log    38;5;226 # Log file
+.mdb    38;5;226 # Microsoft Access database file
+.sav    38;5;226 # Save file (e.g., game save file)
+.sql    38;5;226 # SQL database file
+.txt    38;5;226 # Plain text file
+.xml    38;5;226 # XML file
+.yml    38;5;226
 
-# ARCHIVED DATA
-.dmg 
-.gz  
-.jar    # Java Archive file
-.tar    # Linux / Unix tarball file archive
-.tgz 
-.zip 
-
-# PRESENTATION
-.key    # Keynote presentation
-.odp    # OpenOffice Impress presentation file
-.pps    # PowerPoint slide show
-.ppt    # PowerPoint presentation
-.pptx   # PowerPoint Open XML presentation
-
-# WORD PROCESSING
-.doc    # Microsoft Word file
-.docx   # Microsoft Word file
-.odt    # OpenOffice Writer document file
-.pdf    # PDF file
-.rtf    # Rich Text Format
-.tex    # A LaTeX document file
-.wks    # Microsoft Works file
-.wpd    # WordPerfect document
-.wps    # Microsoft Works file
-
-# SPREADSHEET
-.ods    # OpenOffice Calc spreadsheet file
-.xlr    # Microsoft Works spreadsheet file
-.xls    # Microsoft Excel file
-.xlsx   # Microsoft Excel Open XML spreadsheet file
-
-# MEDIA FORMATS
-.dl
-.fli
-.gl
-.jpg
-.ppm
-.tga
-.xbm
-.xpm
-
-# IMAGES
-.ai     # Adobe Illustrator file
-.bmp    # Bitmap image
-.gif    # GIF image
-.ico    # Icon file
-.jpeg   # .jpg - JPEG image
-.png    # PNG image
-.ps     # PostScript file
-.psd    # PSD image
-.svg    # Scalable Vector Graphics file
-.tif    # .tiff - TIFF image
-
-# VIDEO 
-.3g2    # 3GPP2 multimedia file
-.3gp    # 3GPP multimedia file
-.avi    # AVI file
-.flv    # Adobe Flash file
-.h264   # H.264 video file
-.m4v    # Apple MP4 video file
-.mkv    # Matroska Multimedia Container
-.mov    # Apple QuickTime movie file
-.mp4    # MPEG4 video file
-.mpeg   # MPEG video file
-.mpg    # MPEG video file
-.rm     # RealMedia file
-.swf    # Shockwave flash file
-.vob    # DVD Video Object
-.wmv    # Windows Media Video file
-
-# AUDIO
-.aif    # AIF audio file
-.cda    # CD audio track file
-.mid    # MIDI audio file.
-.midi   # MIDI audio file.
-.mp3    # MP3 audio file
-.mpa    # MPEG-2 audio file
-.ogg    # Ogg Vorbis audio file
-.wav    # WAV file
-.wma    # WMA audio file
-.wpl    # Windows Media Player playlist
+#ARCHIVED DATA
+.dmg    38;5;0;48;5;226 #
+.gz     38;5;0;48;5;226 #
+.jar    38;5;0;48;5;226 # Java Archive file
+.tar    38;5;0;48;5;226 # Linux / Unix tarball file archive
+.tgz    38;5;0;48;5;226 #
+.zip    38;5;0;48;5;226 #
 
 # SYSTEM FILES
-.bak    # Backup file
-.cab    # Windows Cabinet file
-.cfg    # Configuration file
-.cpl    # Windows Control panel file
-.cur    # Windows cursor file
-.dll    # DLL file
-.dmp    # Dump file
-.drv    # Device driver file
-.icns   # macOS X icon resource file
-.ini    # Initialization file
-.lnk    # Windows shortcut file
-.msi    # Windows installer package
-.sys    # Windows system file
-.tmp    # Temporary file
+.bak    38;5;243 # Backup file
+.cab    38;5;243 # Windows Cabinet file
+.cfg    38;5;243 # Configuration file
+.cpl    38;5;243 # Windows Control panel file
+.cur    38;5;243 # Windows cursor file
+.dll    38;5;243 # DLL file
+.dmp    38;5;243 # Dump file
+.drv    38;5;243 # Device driver file
+.icns   38;5;243 # macOS X icon resource file
+.ini    38;5;243 # Initialization file
+.lnk    38;5;243 # Windows shortcut file
+.msi    38;5;243 # Windows installer package
+.sys    38;5;243 # Windows system file
+.tmp    38;5;243 # Temporary file
 
+# # FONTS
+# .fnt    # Windows font file
+# .fon    # Generic font file
+# .otf    # Open type font file
+# .ttf    # TrueType font file
+
+# # PRESENTATION
+# .key    # Keynote presentation
+# .odp    # OpenOffice Impress presentation file
+# .pps    # PowerPoint slide show
+# .ppt    # PowerPoint presentation
+# .pptx   # PowerPoint Open XML presentation
+
+# # WORD PROCESSING
+# .doc    # Microsoft Word file
+# .docx   # Microsoft Word file
+# .odt    # OpenOffice Writer document file
+# .pdf    # PDF file
+# .rtf    # Rich Text Format
+# .tex    # A LaTeX document file
+# .wks    # Microsoft Works file
+# .wpd    # WordPerfect document
+# .wps    # Microsoft Works file
+
+# # SPREADSHEET
+# .ods    # OpenOffice Calc spreadsheet file
+# .xlr    # Microsoft Works spreadsheet file
+# .xls    # Microsoft Excel file
+# .xlsx   # Microsoft Excel Open XML spreadsheet file
+
+# # MEDIA FORMATS
+# .dl
+# .fli
+# .gl
+# .jpg
+# .ppm
+# .tga
+# .xbm
+# .xpm
+
+# # IMAGES
+# .ai     # Adobe Illustrator file
+# .bmp    # Bitmap image
+# .gif    # GIF image
+# .ico    # Icon file
+# .jpeg   # .jpg - JPEG image
+# .png    # PNG image
+# .ps     # PostScript file
+# .psd    # PSD image
+# .svg    # Scalable Vector Graphics file
+# .tif    # .tiff - TIFF image
+
+# # VIDEO 
+# .3g2    # 3GPP2 multimedia file
+# .3gp    # 3GPP multimedia file
+# .avi    # AVI file
+# .flv    # Adobe Flash file
+# .h264   # H.264 video file
+# .m4v    # Apple MP4 video file
+# .mkv    # Matroska Multimedia Container
+# .mov    # Apple QuickTime movie file
+# .mp4    # MPEG4 video file
+# .mpeg   # MPEG video file
+# .mpg    # MPEG video file
+# .rm     # RealMedia file
+# .swf    # Shockwave flash file
+# .vob    # DVD Video Object
+# .wmv    # Windows Media Video file
+
+# # AUDIO
+# .aif    # AIF audio file
+# .cda    # CD audio track file
+# .mid    # MIDI audio file.
+# .midi   # MIDI audio file.
+# .mp3    # MP3 audio file
+# .mpa    # MPEG-2 audio file
+# .ogg    # Ogg Vorbis audio file
+# .wav    # WAV file
+# .wma    # WMA audio file
+# .wpl    # Windows Media Player playlist
 
 
 
