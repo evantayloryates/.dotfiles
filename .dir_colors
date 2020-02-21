@@ -129,6 +129,12 @@ EXEC 01;31
 .tt     38;5;201 #
 .vb     38;5;201 # Visual Basic file
 
+# REFERENCE
+.md     38;5;015 # Plain text file
+.txt    38;5;015 # Plain text file
+.log    38;5;015 # Log file
+.rst    38;5;015 # Log file
+
 # RAW DATA
 .csv    38;5;051 # Comma separated value file
 .dat    38;5;051 # Data file
@@ -137,12 +143,11 @@ EXEC 01;31
 .mdb    38;5;051 # Microsoft Access database file
 .sav    38;5;051 # Save file (e.g., game save file)
 .sql    38;5;051 # SQL database file
-.txt    38;5;051 # Plain text file
 .xml    38;5;051 # XML file
 .yml    38;5;051
 
-# LOGS
-.log    38;5;015 # Log file
+
+
 
 # ARCHIVED DATA
 .dmg    38;5;226 #
