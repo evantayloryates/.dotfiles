@@ -1,0 +1,252 @@
+#!/bin/bash
+
+# Configuration file for dircolors, a utility to help you set the
+# LS_COLORS environment variable used by GNU ls with the –color option.
+# The keywords COLOR, OPTIONS, and EIGHTBIT (honored by the
+# slackware version of dircolors) are recognized but ignored.
+# Below, there should be one TERM entry for each termtype that is colorizable
+
+TERM linux
+TERM linux-c
+TERM mach-color
+TERM console
+TERM con132x25
+TERM con132x30
+TERM con132x43
+TERM con132x60
+TERM con80x25
+TERM con80x28
+TERM con80x30
+TERM con80x43
+TERM con80x50
+TERM con80x60
+TERM xterm
+TERM xterm-color
+TERM xterm-debian
+TERM rxvt
+TERM screen
+TERM screen-w
+TERM vt100
+TERM xterm-256color
+
+
+# Below are the color init strings for the basic file types. A color init
+# string consists of one or more of the following numeric codes:
+# 
+# Attribute codes:
+#  - 00=none 
+#  - 01=bold 
+#  - 04=underscore 
+#  - 05=blink 
+#  - 07=reverse 
+#  - 08=concealed
+#
+# Text color codes:
+#  - 30=black 
+#  - 31=red 
+#  - 32=green 
+#  - 33=yellow 
+#  - 34=blue 
+#  - 35=magenta 
+#  - 36=cyan 
+#  - 37=white
+#
+# Background color codes:
+#  - 40=black 
+#  - 41=red 
+#  - 42=green 
+#  - 43=yellow 
+#  - 44=blue 
+#  - 45=magenta 
+#  - 46=cyan 
+#  - 47=white
+
+
+NORMAL 00       # global default, although everything should be something.
+FILE 00         # normal file
+DIR 01;34       # directory
+LINK 04;38;5;33;48;5;255     # symbolic link.  (If you set this to ‘target’ instead of a
+                # numerical value, the color is as for the file pointed to.)
+FIFO 40;33      # pipe
+SOCK 01;35      # socket
+DOOR 01;35      # door
+BLK 40;33;01    # block device driver
+CHR 40;33;01    # character device driver
+ORPHAN 40;31;01 # symlink to nonexistent file
+EXEC 38;5;124   # This is for files with execute permission:
+
+# List any file extensions like ‘.gz’ or ‘.tar’ that you would like ls
+# to colorize below. Put the extension, a space, and the color init string.
+# (and any comments you want to add after a ‘#’)
+# If you use DOS-style suffixes, you may want to uncomment the following:
+
+# EXECUTABLES
+.apk    38;5;196 # Android package file
+.bat    38;5;196 # Batch file
+.bin    38;5;196 # Binary file
+.cmd    38;5;196 #  
+.com    38;5;196 # MS-DOS command file
+.exe    38;5;196 # Executable file
+.gadget 38;5;196 # Windows gadget
+.sh     38;5;196 # Bash shell script
+.wsf    38;5;196 # Windows Script File
+
+# INTERNET
+.asp    01;04;38;5;26;48;5;255 # Active Server Page file
+.aspx   01;04;38;5;26;48;5;255 # Active Server Page file
+.cer    01;04;38;5;26;48;5;255 # Internet security certificate
+.cfm    01;04;38;5;26;48;5;255 # ColdFusion Markup file
+.cgi    01;04;38;5;26;48;5;255 # Perl script file
+.css    01;04;38;5;26;48;5;255 # Cascading Style Sheet file
+.htm    01;04;38;5;26;48;5;255 # HTML file
+.html   01;04;38;5;26;48;5;255 # HTML file
+.js     01;04;38;5;26;48;5;255 # JavaScript file
+.jsp    01;04;38;5;26;48;5;255 # Java Server Page file
+.less   01;04;38;5;26;48;5;255 #
+.part   01;04;38;5;26;48;5;255 # Partially downloaded file
+.php    01;04;38;5;26;48;5;255 # PHP file
+.pl     01;04;38;5;26;48;5;255 # Perl script file
+.rss    01;04;38;5;26;48;5;255 # RSS file
+.sass   01;04;38;5;26;48;5;255 #
+.scss   01;04;38;5;26;48;5;255 #
+.ts     01;04;38;5;26;48;5;255 # TypeScript file
+.xhtml  01;04;38;5;26;48;5;255 # XHTML file
+
+# SOURCE CODE
+.c      38;5;201 # C and C++ source code file
+.class  38;5;201 # Java class file
+.cpp    38;5;201 # C++ source code file
+.cs     38;5;201 # Visual C# source code file
+.h      38;5;201 # C, C++, and Objective-C header file
+.java   38;5;201 # Java Source code file
+.pm     38;5;201 #
+.py     38;5;201 # Python file
+.swift  38;5;201 # Swift source code file
+.tt     38;5;201 #
+.vb     38;5;201 # Visual Basic file
+
+# REFERENCE
+.md     38;5;015 # Plain text file
+.txt    38;5;015 # Plain text file
+.log    38;5;015 # Log file
+.rst    38;5;015 # Restructured Text file (used primarily by Python)
+.pdf    38;5;015 # PDF file
+
+# RAW DATA
+.csv    38;5;051 # Comma separated value file
+.dat    38;5;051 # Data file
+.db     38;5;051 # Database file
+.dbf    38;5;051 # Database file
+.mdb    38;5;051 # Microsoft Access database file
+.sav    38;5;051 # Save file (e.g., game save file)
+.sql    38;5;051 # SQL database file
+.xml    38;5;051 # XML file
+.yml    38;5;051
+
+# ARCHIVED DATA
+.dmg    38;5;226 #
+.gz     38;5;226 #
+.jar    38;5;226 # Java Archive file
+.tar    38;5;226 # Linux / Unix tarball file archive
+.tgz    38;5;226 #
+.zip    38;5;226 #
+
+# SYSTEM FILES
+.bak    38;5;243 # Backup file
+.cab    38;5;243 # Windows Cabinet file
+.cfg    38;5;243 # Configuration file
+.cpl    38;5;243 # Windows Control panel file
+.cur    38;5;243 # Windows cursor file
+.dll    38;5;243 # DLL file
+.dmp    38;5;243 # Dump file
+.drv    38;5;243 # Device driver file
+.icns   38;5;243 # macOS X icon resource file
+.ini    38;5;243 # Initialization file
+.lnk    38;5;243 # Windows shortcut file
+.msi    38;5;243 # Windows installer package
+.sys    38;5;243 # Windows system file
+.tmp    38;5;243 # Temporary file
+
+
+# # FONTS
+# .fnt    # Windows font file
+# .fon    # Generic font file
+# .otf    # Open type font file
+# .ttf    # TrueType font file
+
+# # PRESENTATION
+# .key    # Keynote presentation
+# .odp    # OpenOffice Impress presentation file
+# .pps    # PowerPoint slide show
+# .ppt    # PowerPoint presentation
+# .pptx   # PowerPoint Open XML presentation
+
+# # WORD PROCESSING
+# .doc    # Microsoft Word file
+# .docx   # Microsoft Word file
+# .odt    # OpenOffice Writer document file
+# .rtf    # Rich Text Format
+# .tex    # A LaTeX document file
+# .wks    # Microsoft Works file
+# .wpd    # WordPerfect document
+# .wps    # Microsoft Works file
+
+# # SPREADSHEET
+# .ods    # OpenOffice Calc spreadsheet file
+# .xlr    # Microsoft Works spreadsheet file
+# .xls    # Microsoft Excel file
+# .xlsx   # Microsoft Excel Open XML spreadsheet file
+
+# # MEDIA FORMATS
+# .dl
+# .fli
+# .gl
+# .jpg
+# .ppm
+# .tga
+# .xbm
+# .xpm
+
+# # IMAGES
+# .ai     # Adobe Illustrator file
+# .bmp    # Bitmap image
+# .gif    # GIF image
+# .ico    # Icon file
+# .jpeg   # .jpg - JPEG image
+# .png    # PNG image
+# .ps     # PostScript file
+# .psd    # PSD image
+# .svg    # Scalable Vector Graphics file
+# .tif    # .tiff - TIFF image
+
+# # VIDEO 
+# .3g2    # 3GPP2 multimedia file
+# .3gp    # 3GPP multimedia file
+# .avi    # AVI file
+# .flv    # Adobe Flash file
+# .h264   # H.264 video file
+# .m4v    # Apple MP4 video file
+# .mkv    # Matroska Multimedia Container
+# .mov    # Apple QuickTime movie file
+# .mp4    # MPEG4 video file
+# .mpeg   # MPEG video file
+# .mpg    # MPEG video file
+# .rm     # RealMedia file
+# .swf    # Shockwave flash file
+# .vob    # DVD Video Object
+# .wmv    # Windows Media Video file
+
+# # AUDIO
+# .aif    # AIF audio file
+# .cda    # CD audio track file
+# .mid    # MIDI audio file.
+# .midi   # MIDI audio file.
+# .mp3    # MP3 audio file
+# .mpa    # MPEG-2 audio file
+# .ogg    # Ogg Vorbis audio file
+# .wav    # WAV file
+# .wma    # WMA audio file
+# .wpl    # Windows Media Player playlist
+
+
+

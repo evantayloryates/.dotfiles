@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# TYPE: misc
+# DESC: Set ls output colors with GNU dircolors
+eval $(gdircolors -b $DOTFILES_DIR/.dir_colors)
+
+
+# TYPE: misc
+# DESC: Set the empty command to 'ls'
+command1()
+{
+    if [ "$BASH_COMMAND" != command2 ]
+    then
+        command_flag=1
+    fi
+    return 0
+}
+trap command1 debug
+command2()
+{
+    if [ ! "$command_flag" ]
+    then
+        pwd
+        # ls Put whatever command(s) you want here.
+    fi
+    command_flag=
+}
+PROMPT_COMMAND=command2
+
+
+# TYPE: misc
+# DESC: append to the history file, don't overwrite it
+shopt -s histappend
+

@@ -66,4 +66,3 @@ function gi {
   repo_dir=$(git rev-parse --show-toplevel)
   vim "${repo_dir}/.gitignore"
 }
-
