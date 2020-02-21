@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # TYPE: path
 # DESC: hub
 PATH=$PATH:/Users/etyates/bin

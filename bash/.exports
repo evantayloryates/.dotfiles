@@ -28,33 +28,70 @@ export TERM_PROGRAM="iTerm"
 # DESC: Python command to get the active script's directory
 export SCRIPT_DIR="os.path.dirname(os.path.realpath(__file__))"
 
-#################
-## ANSI COLORS ##
-#################
+# TYPE: export
+# DESC: ANSI Color (No Color)
+export COLOR_NC='\e[0m'
 
-# Black        0;30     Dark Gray     1;30
-# Red          0;31     Light Red     1;31
-# Green        0;32     Light Green   1;32
-# Brown/Orange 0;33     Yellow        1;33
-# Blue         0;34     Light Blue    1;34
-# Purple       0;35     Light Purple  1;35
-# Cyan         0;36     Light Cyan    1;36
-# Light Gray   0;37     White         1;37
-
-export COLOR_NC='\e[0m' # No Color
+# TYPE: export
+# DESC: ANSI Color (White)
 export COLOR_WHITE='\e[1;37m'
+
+# TYPE: export
+# DESC: ANSI Color (Black)
 export COLOR_BLACK='\e[0;30m'
+
+# TYPE: export
+# DESC: ANSI Color (Blue)
 export COLOR_BLUE='\e[0;34m'
+
+# TYPE: export
+# DESC: ANSI Color (Light Blue)
 export COLOR_LIGHT_BLUE='\e[1;34m'
+
+# TYPE: export
+# DESC: ANSI Color (Green)
 export COLOR_GREEN='\e[0;32m'
+
+# TYPE: export
+# DESC: ANSI Color (Light Green)
 export COLOR_LIGHT_GREEN='\e[1;32m'
+
+# TYPE: export
+# DESC: ANSI Color (Cyan)
 export COLOR_CYAN='\e[0;36m'
+
+# TYPE: export
+# DESC: ANSI Color (Light Cyan)
 export COLOR_LIGHT_CYAN='\e[1;36m'
+
+# TYPE: export
+# DESC: ANSI Color (Red)
 export COLOR_RED='\e[0;31m'
+
+# TYPE: export
+# DESC: ANSI Color (Light Red)
 export COLOR_LIGHT_RED='\e[1;31m'
+
+# TYPE: export
+# DESC: ANSI Color (Purple)
 export COLOR_PURPLE='\e[0;35m'
+
+# TYPE: export
+# DESC: ANSI Color (Light Purple)
 export COLOR_LIGHT_PURPLE='\e[1;35m'
+
+# TYPE: export
+# DESC: ANSI Color (Brown)
 export COLOR_BROWN='\e[0;33m'
+
+# TYPE: export
+# DESC: ANSI Color (Yellow)
 export COLOR_YELLOW='\e[1;33m'
+
+# TYPE: export
+# DESC: ANSI Color (Gray)
 export COLOR_GRAY='\e[0;30m'
+
+# TYPE: export
+# DESC: ANSI Color (Light Gray)
 export COLOR_LIGHT_GRAY='\e[0;37m'
