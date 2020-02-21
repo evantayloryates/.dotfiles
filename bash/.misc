@@ -3,7 +3,6 @@
 # TYPE: misc
 # DESC: Set ls output colors
 if [ "$TERM" != "dumb" ]; then
-    export LS_OPTIONS='–color=auto'
     eval </span>gdircolors $DOTFILES_DIR/.dir_colors<span class="sb">
 fi
 
