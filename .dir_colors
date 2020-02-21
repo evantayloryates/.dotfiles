@@ -92,7 +92,7 @@ EXEC 01;31
 .bat 01;32
 .tar 01;31 # archives or compressed (bright red)
 .tgz 01;31
-.gz  05;32
+.gz  01;33
 .arj 01;31
 .taz 01;31
 .lzh 01;31
