@@ -15,6 +15,9 @@ source $DOTFILES_DIR/bash/.exports
 # source functions
 source $DOTFILES_DIR/bash/.functions
 
+# source functions
+source $DOTFILES_DIR/bash/.functions
+
 # try sourcing local bash functions, aliases, etc...
 source $DOTFILES_DIR/bash/.locals 2>/dev/null || printf "No local bash file found at ${DOTFILES_DIR}/bash/.locals    Continuing...\n"
 
