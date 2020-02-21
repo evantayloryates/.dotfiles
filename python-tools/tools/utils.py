@@ -146,14 +146,22 @@ def pbytes(in_bytes):
     else: return f'{raw_bytes}B'
 
 # PRINT PROCESS MEMORY
-def mem():
-    process = psutil.Process(os.getpid())
-    return pbytes(process.memory_info().rss)
+# def mem():
+#     print('SCRIPT MEMORY')
+#     process = psutil.Process(os.getpid())
+#     return pbytes(process.memory_info().rss)
 
 # BYTE SIZE
-def mem(obj):
+def mem(*args):
+    try:
+        obj = args[0]
+    except:
+        print('SCRIPT MEMORY')
+        process = psutil.Process(os.getpid())
+        return pbytes(process.memory_info().rss)
+    print('OBJECT MEMORY')
     raw_bytes = asizeof(obj)
-    pbytes(raw_bytes)
+    return pbytes(raw_bytes)
 
 # MINIFY JSON OBJ/STR
 def jmin(in_obj):
