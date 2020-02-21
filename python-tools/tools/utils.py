@@ -1,6 +1,7 @@
 import re
 import os
 import sys
+import json
 import psutil
 import datetime as dt
 from inspect import isclass
@@ -146,6 +147,21 @@ def mem():
 def mem(obj):
     raw_bytes = asizeof(obj)
     pbytes(raw_bytes)
+
+# MINIFY JSON OBJ/STR
+def jmin(in_obj):
+    out_str = ''
+    if type(in_obj) == str:
+        obj = json.loads(in_obj)
+        out_str = json.dumps(obj,separators=(',', ':'))
+    else:
+        out_str = json.dumps(in_obj,separators=(',', ':'))
+    return out_str
+
+# PRINT SYNTAX FOR MINIFYING JSON
+def pjmin():
+    out = """json.dumps(<OBJ>,separators=(',', ':'))"""
+    print(out)
 
 # DELETE LINE
 def dline():
