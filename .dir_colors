@@ -96,25 +96,25 @@ EXEC 01;31
 .wsf    38;5;196 # Windows Script File
 
 # INTERNET
-.asp    38;5;046 # Active Server Page file
-.aspx   38;5;046 # Active Server Page file
-.cer    38;5;046 # Internet security certificate
-.cfm    38;5;046 # ColdFusion Markup file
-.cgi    38;5;046 # Perl script file
-.css    38;5;046 # Cascading Style Sheet file
-.htm    38;5;046 # HTML file
-.html   38;5;046 # HTML file
+.asp    01;04;38;5;26;48;5;255 # Active Server Page file
+.aspx   01;04;38;5;26;48;5;255 # Active Server Page file
+.cer    01;04;38;5;26;48;5;255 # Internet security certificate
+.cfm    01;04;38;5;26;48;5;255 # ColdFusion Markup file
+.cgi    01;04;38;5;26;48;5;255 # Perl script file
+.css    01;04;38;5;26;48;5;255 # Cascading Style Sheet file
+.htm    01;04;38;5;26;48;5;255 # HTML file
+.html   01;04;38;5;26;48;5;255 # HTML file
 .js     01;04;38;5;26;48;5;255 # JavaScript file
-.jsp    38;5;046 # Java Server Page file
-.less   38;5;046 #
-.part   38;5;046 # Partially downloaded file
-.php    38;5;046 # PHP file
-.pl     38;5;046 # Perl script file
-.rss    38;5;046 # RSS file
-.sass   38;5;046 #
-.scss   38;5;046 #
-.ts     38;5;046 # TypeScript file
-.xhtml  38;5;046 # XHTML file
+.jsp    01;04;38;5;26;48;5;255 # Java Server Page file
+.less   01;04;38;5;26;48;5;255 #
+.part   01;04;38;5;26;48;5;255 # Partially downloaded file
+.php    01;04;38;5;26;48;5;255 # PHP file
+.pl     01;04;38;5;26;48;5;255 # Perl script file
+.rss    01;04;38;5;26;48;5;255 # RSS file
+.sass   01;04;38;5;26;48;5;255 #
+.scss   01;04;38;5;26;48;5;255 #
+.ts     01;04;38;5;26;48;5;255 # TypeScript file
+.xhtml  01;04;38;5;26;48;5;255 # XHTML file
 
 # SOURCE CODE
 .c      38;5;201 # C and C++ source code file
