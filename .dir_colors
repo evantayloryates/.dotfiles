@@ -101,10 +101,10 @@ EXEC 01;31
 .jar 01;31
 .dmg 01;31
 
-.zip 01;33
-.tgz 01;33
-.tar 01;33 # archives or compressed (bright red)
-.gz  01;33
+.zip 01;33;40
+.tgz 01;33;40
+.tar 01;33;40 # archives or compressed (bright red)
+.gz  01;33;40
 
 # image formats
 .jpg 01;35
