@@ -6,7 +6,7 @@ alias dots="subl $DOTFILES_DIR"
 
 # TYPE: alias
 # DESC: change to .dotfiles directory
-alias dot="cd $DOTFILES_DIR; cl; ls"
+alias dot="cd $DOTFILES_DIR; cl"
 
 # TYPE: alias
 # DESC: open dofiles directory in Sublime
@@ -90,7 +90,9 @@ alias lf="ls -p | grep -v /"
 
 # TYPE: alias
 # DESC: ls sorted by name
-alias ls="clear;ls -alhG --color=auto 2>/dev/null || ls -alhG"
+# alias ls="clear;ls -alhG --color=auto 2>/dev/null || ls -alhG"
+alias ls='ls $LS_OPTIONS -lhF'
+
 
 # TYPE: alias
 # DESC: allow use of 'sudo' with aliases
