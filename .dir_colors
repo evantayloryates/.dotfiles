@@ -130,25 +130,25 @@ EXEC 01;31
 .vb     38;5;201 # Visual Basic file
 
 # RAW DATA
-.csv    38;5;226 # Comma separated value file
-.dat    38;5;226 # Data file
-.db     38;5;226 # Database file
-.dbf    38;5;226 # Database file
-.log    38;5;226 # Log file
-.mdb    38;5;226 # Microsoft Access database file
-.sav    38;5;226 # Save file (e.g., game save file)
-.sql    38;5;226 # SQL database file
-.txt    38;5;226 # Plain text file
-.xml    38;5;226 # XML file
-.yml    38;5;226
+.csv    38;5;051 # Comma separated value file
+.dat    38;5;051 # Data file
+.db     38;5;051 # Database file
+.dbf    38;5;051 # Database file
+.log    38;5;051 # Log file
+.mdb    38;5;051 # Microsoft Access database file
+.sav    38;5;051 # Save file (e.g., game save file)
+.sql    38;5;051 # SQL database file
+.txt    38;5;051 # Plain text file
+.xml    38;5;051 # XML file
+.yml    38;5;051
 
-#ARCHIVED DATA
-.dmg    38;5;0;48;5;226 #
-.gz     38;5;0;48;5;226 #
-.jar    38;5;0;48;5;226 # Java Archive file
-.tar    38;5;0;48;5;226 # Linux / Unix tarball file archive
-.tgz    38;5;0;48;5;226 #
-.zip    38;5;0;48;5;226 #
+# ARCHIVED DATA
+.dmg    38;5;226 #
+.gz     38;5;226 #
+.jar    38;5;226 # Java Archive file
+.tar    38;5;226 # Linux / Unix tarball file archive
+.tgz    38;5;226 #
+.zip    38;5;226 #
 
 # SYSTEM FILES
 .bak    38;5;243 # Backup file
