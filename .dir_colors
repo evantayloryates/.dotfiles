@@ -135,6 +135,7 @@ EXEC 01;31
 .html 00;33
 .css 00;33
 .js 00;33
+.py 01;35
 
 
 LEFTCODE  \e[
