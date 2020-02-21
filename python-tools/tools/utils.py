@@ -141,14 +141,14 @@ def pdt(dt_in=None, r=True):
 def pbytes(in_bytes):
     mb = round(in_bytes/1000000.,2)
     kb = round(in_bytes/1000.,2)
-    if mb: print (f'{mb}MB')
-    elif kb: print (f'{kb}KB')
-    else: print(f'{raw_bytes}B')
+    if mb: return f'{mb}MB'
+    elif kb: return f'{kb}KB'
+    else: return f'{raw_bytes}B'
 
 # PRINT PROCESS MEMORY
 def mem():
     process = psutil.Process(os.getpid())
-    pbytes(process.memory_info().rss)
+    return pbytes(process.memory_info().rss)
 
 # BYTE SIZE
 def mem(obj):
