@@ -91,7 +91,7 @@ alias lf="ls -p | grep -v /"
 # TYPE: alias
 # DESC: ls sorted by name
 # alias ls="clear;ls -alhG --color=auto 2>/dev/null || ls -alhG"
-alias ls="gls --color=auto -gAhLZ --no-group --author --literal --group-directories-first"
+alias ls="gls --color=auto -gAhLZ --no-group --author --literal --group-directories-first --ignore=.DS_Store"
 
 # TYPE: alias
 # DESC: allow use of 'sudo' with aliases
