@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# source lcoal configurations
+# source local configurations
 source $DOTFILES_DIR/.local_configs
+
+# source path exports
+source $DOTFILES_DIR/bash/.path
 
 # source exports
 source $DOTFILES_DIR/bash/.exports
