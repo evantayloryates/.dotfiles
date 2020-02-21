@@ -147,9 +147,6 @@ EXEC 01;31
 .xml    38;5;051 # XML file
 .yml    38;5;051
 
-
-
-
 # ARCHIVED DATA
 .dmg    38;5;226 #
 .gz     38;5;226 #
