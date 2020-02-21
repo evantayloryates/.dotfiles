@@ -3,6 +3,9 @@
 # source lcoal configurations
 source $DOTFILES_DIR/.local_configs
 
+# source misc ops
+source $DOTFILES_DIR/bash/.misc
+
 # source aliases
 source $DOTFILES_DIR/bash/.aliases
 
@@ -15,34 +18,8 @@ source $DOTFILES_DIR/bash/.functions
 # try sourcing local bash functions, aliases, etc...
 source $DOTFILES_DIR/bash/.locals 2>/dev/null || printf "No local bash file found at ${DOTFILES_DIR}/bash/.locals    Continuing...\n"
 
-# TYPE: misc
-# DESC: Set the empty command to 'ls'
-command1()
-{
-    if [ "$BASH_COMMAND" != command2 ]
-    then
-        command_flag=1
-    fi
-    return 0
-}
-trap command1 debug
-command2()
-{
-    if [ ! "$command_flag" ]
-    then
-        pwd
-        # ls Put whatever command(s) you want here.
-    fi
-    command_flag=
-}
-PROMPT_COMMAND=command2
-
-
-# TYPE: misc
-# DESC: append to the history file, don't overwrite it
-shopt -s histappend
-
-
+# Check for updates in dotfiles repo
+$DOTFILES_DIR/scripts/check_for_git_updates.sh
 
 
 
