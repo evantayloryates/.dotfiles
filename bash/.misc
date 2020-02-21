@@ -1,11 +1,8 @@
 #!/bin/bash
 
 # TYPE: misc
-# DESC: Set ls output colors
-if [ "$TERM" != "dumb" ]; then
-    eval </span>gdircolors $DOTFILES_DIR/.dir_colors<span class="sb">
-fi
-
+# DESC: Set ls output colors with GNU dircolors
+eval $(gdircolors -b $DOTFILES_DIR/.dir_colors)
 
 
 # TYPE: misc
