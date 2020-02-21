@@ -156,10 +156,8 @@ def mem(*args):
     try:
         obj = args[0]
     except:
-        print('SCRIPT MEMORY')
         process = psutil.Process(os.getpid())
         return pbytes(process.memory_info().rss)
-    print('OBJECT MEMORY')
     raw_bytes = asizeof(obj)
     return pbytes(raw_bytes)
 
