@@ -104,7 +104,6 @@ EXEC 01;31
 .zip 01;33;40
 .tgz 01;33;40
 .tar 01;33;40 # archives or compressed (bright red)
-# .gz  01;33;40
 .gz  01;04;05;38;5;160;48;5;240
 
 
@@ -137,7 +136,7 @@ EXEC 01;31
 .html 00;33
 .css 00;33
 .js 00;33
-.py 01;36
+.py 201
 
 
 LEFTCODE  \e[
