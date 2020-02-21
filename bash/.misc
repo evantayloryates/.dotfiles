@@ -4,8 +4,6 @@
 # DESC: Set ls output colors with GNU dircolors
 eval $(gdircolors -b $DOTFILES_DIR/.dir_colors)
 
-printf "${LS_COLORS}"
-
 # TYPE: misc
 # DESC: Set the empty command to 'ls'
 command1()
