@@ -21,4 +21,4 @@ if __name__ == "__main__":
 	except:
 		pw_length = DEFAULT_LENGTH
 
-	sys.stdout.write(gen_password(pw_length))
+	sys.stdout.write(gen_password(pw_length) + '\n')
