@@ -20,222 +20,332 @@ alias dots="subl $DOTFILES_DIR"
 
 # TYPE: alias
 # DESC: change to .dotfiles directory
+# CREATED: None
+# UPDATED: None
 alias dot="cd $DOTFILES_DIR; cl"
 
 # TYPE: alias
 # DESC: open dofiles directory in Sublime
+# CREATED: None
+# UPDATED: None
 alias pro="subl $HOME/.bash_profile"
 
 # TYPE: alias
 # DESC: runs Python with interpreter
+# CREATED: None
+# UPDATED: None
 alias pi="python -i"
 
 # TYPE: alias
 # DESC: adds headers to 'ps' command
+# CREATED: None
+# UPDATED: None
 alias ps="ps -ef | head -1; ps"
 
 # TYPE: alias
 # DESC: Open the Python Regular Expression cheat sheet
+# CREATED: None
+# UPDATED: None
 alias re="subl $DOTFILES_DIR/python-tools/cli/re_reference.py"
 
 # TYPE: alias
 # DESC: open dofiles directory in Sublime
+# CREATED: None
+# UPDATED: None
 alias colors="$DOTFILES_DIR/scripts/show_colors.sh"
 
 # TYPE: alias
 # DESC: source the .bash_profile
+# CREATED: None
+# UPDATED: None
 alias src="source ~/.bash_profile"
 
 # TYPE: alias
 # DESC: quick open functions script
+# CREATED: None
+# UPDATED: None
 alias fns="open $DOTFILES_DIR/bash/.functions"
 
 # TYPE: alias
 # DESC: quick open aliases script
+# CREATED: None
+# UPDATED: None
 alias als="open $DOTFILES_DIR/bash/.aliases"
 
 # TYPE: alias
 # DESC: quick open exports script
+# CREATED: None
+# UPDATED: None
 alias exp="open $DOTFILES_DIR/bash/.exports"
 
 # TYPE: alias
 # DESC: quick open new file in Sublime
+# CREATED: None
+# UPDATED: None
 alias new="subl -n"
 
 # TYPE: alias
 # DESC: Open local bash file
+# CREATED: None
+# UPDATED: None
 alias loc="subl $DOTFILES_DIR/bash/.locals 2>/dev/null || vim $DOTFILES_DIR/bash/.locals"
 
 # TYPE: alias
 # DESC: quick open openers script
+# CREATED: None
+# UPDATED: None
 alias conf="open $DOTFILES_DIR/.local_config"
 
 # TYPE: alias
 # DESC: quick open openers script
+# CREATED: None
+# UPDATED: None
 alias jform="python $DOTFILES_DIR/python-tools/cli/format_json.py"
 
 # TYPE: alias
 # DESC: short hand for going up a directory
+# CREATED: None
+# UPDATED: None
 alias cd..="cd .."
 
 # TYPE: alias
 # DESC: short hand for going up two directories
+# CREATED: None
+# UPDATED: None
 alias cd...="cd ../.."
 
 # TYPE: alias
 # DESC: short hand for going up three directories
+# CREATED: None
+# UPDATED: None
 alias cd....="cd ../../.."
 
 # TYPE: alias
 # DESC: short hand for going to previous working directory
+# CREATED: None
+# UPDATED: None
 alias cd\-="cd -"
 
 # TYPE: alias
 # DESC: clear terminal
+# CREATED: None
+# UPDATED: None
 alias cl="clear"
 
 # TYPE: alias
 # DESC: list just directories
+# CREATED: None
+# UPDATED: None
 alias ld="ls -dl .*/ */"
 
 # TYPE: alias
 # DESC: list just files
+# CREATED: None
+# UPDATED: None
 alias lf="ls -p | grep -v /"
 
 # TYPE: alias
 # DESC: allow use of 'sudo' with aliases
+# CREATED: None
+# UPDATED: None
 alias sd="sudo "
 
 # TYPE: alias
 # DESC: open .init
+# CREATED: None
+# UPDATED: None
 alias init="subl $DOTFILES_DIR/.init 2>/dev/null || vim $DOTFILES_DIR/.init"
 
 # TYPE: alias
 # DESC: open .pythonrc
+# CREATED: None
+# UPDATED: None
 alias pyrc="open $DOTFILES_DIR/.pythonrc"
 
 # TYPE: alias
 # DESC: open hamerspoon config file
+# CREATED: None
+# UPDATED: None
 alias ham="open $DOTFILES_DIR/.hammerspoon/init.lua"
 
 # TYPE: alias
 # DESC: open tasks file
+# CREATED: None
+# UPDATED: None
 alias tasks="subl $NOTES_DIR/tasks.txt || echo 'ERROR: Make sure you set NOTES_DIR in .local_config'"
 
 # TYPE: alias
 # DESC: open vim config file
+# CREATED: None
+# UPDATED: None
 alias vimrc="open $DOTFILES_DIR/.vimrc"
 
 # TYPE: alias
 # DESC: quickly open python tools directory
+# CREATED: None
+# UPDATED: None
 alias tools="open $PYTHON_TOOLS_DIR || echo 'ERROR: Make sure you set PYTHON_TOOLS_DIR in .local_config'"
 
 # TYPE: alias
 # DESC: list all active aliases
+# CREATED: None
+# UPDATED: None
 alias aliases="python $DOTFILES_DIR/scripts/get_aliases.py"
 
 # TYPE: alias
 # DESC: show recently used commands
+# CREATED: None
+# UPDATED: None
 alias commands="python $DOTFILES_DIR/scripts/get_top_commands.py"
 
 # TYPE: alias
 # DESC: list directories in the current PATH
+# CREATED: None
+# UPDATED: None
 alias path="python $DOTFILES_DIR/scripts/get_path.py"
 
 # TYPE: alias
 # DESC: quick jump to Desktop directory
+# CREATED: None
+# UPDATED: None
 alias d="cd ~/Desktop; cl; ls"
 
 # TYPE: alias
 # DESC: quick jump to home directory and ls
+# CREATED: None
+# UPDATED: None
 alias h="cd ~; cl"
 
 # TYPE: alias
 # DESC: quick jump to src directory and ls
+# CREATED: None
+# UPDATED: None
 alias s="cd $SRC_DIR; cl; ls"
 
 # TYPE: alias
 # DESC: opens the current directory in Finder
+# CREATED: None
+# UPDATED: None
 alias o="open ."
 
 # TYPE: alias
 # DESC: Get status of current GH repo
+# CREATED: None
+# UPDATED: None
 alias gs="git status"
 
 # TYPE: alias
 # DESC: add files to GH working tree
+# CREATED: None
+# UPDATED: None
 alias ga="git add"
 
 # TYPE: alias
 # DESC: commit git changes with message
+# CREATED: None
+# UPDATED: None
 alias gc="git commit -m"
 
 # TYPE: alias
 # DESC: push changes from local repo to remote repo
+# CREATED: None
+# UPDATED: None
 alias gp="git push"
 
 # TYPE: alias
 # DESC: pull remote changes to local repo
+# CREATED: None
+# UPDATED: None
 alias gpu="git pull"
 
 # TYPE: alias
 # DESC: delete previously tracked files
+# CREATED: None
+# UPDATED: None
 # alias gd="git rm $(git ls-files --deleted)"
 alias gd="git add -u :/"
 
 # TYPE: alias
 # DESC: prints out the current environment variables alphabetically
+# CREATED: None
+# UPDATED: None
 alias env="env | sort"
 
 # TYPE: alias
 # DESC: hide hidden files in Finder
+# CREATED: None
+# UPDATED: None
 alias hide="defaults write com.apple.finder AppleShowAllFiles FALSE  && killall Finder"
 
 # TYPE: alias
 # DESC: show hidden files in Finder
+# CREATED: None
+# UPDATED: None
 alias show="defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder"
 
 # TYPE: alias
 # DESC: follow cpu activity
+# CREATED: None
+# UPDATED: None
 alias cpu="top -F -R -o cpu"
 
 # TYPE: alias
 # DESC: activate screensaver
+# CREATED: None
+# UPDATED: None
 alias lock="/System/Library/CoreServices/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine"
 
 # TYPE: alias
 # DESC: open applications directory in Finder
+# CREATED: None
+# UPDATED: None
 alias app="open $APPS_DIR"
 
 # TYPE: alias
 # DESC: Opens new Chrome window
+# CREATED: None
+# UPDATED: None
 alias chr="open -n $APPS_DIR/Google\ Chrome.app"
 
 # TYPE: alias
 # DESC: Opens System Preferences
+# CREATED: None
+# UPDATED: None
 alias set="open -a /Applications/System\ Preferences.app"
 
 # TYPE: alias
 # DESC: cd to github folder
+# CREATED: None
+# UPDATED: None
 alias gh="cd $SRC_DIR/github; cl"
 
 # TYPE: alias
 # DESC: open src folder
+# CREATED: None
+# UPDATED: None
 alias os="o ~/src"
 
 # TYPE: alias
 # DESC: open github folder
+# CREATED: None
+# UPDATED: None
 alias og="o ~/src/github"
 
 # TYPE: alias
 # DESC: open Desktop folder
+# CREATED: None
+# UPDATED: None
 alias od="o ~/Desktop"
 
 # TYPE: alias
 # DESC: use 'command' to avoid using aliases and functions
+# CREATED: None
+# UPDATED: None
 alias co="command"
 
 # TYPE: alias
 # DESC: use 'command' to avoid using aliases and functions
+# CREATED: None
+# UPDATED: None
 alias condarc="subl ~/.condarc"
 
