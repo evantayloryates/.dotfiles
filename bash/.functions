@@ -37,6 +37,7 @@ function new {
 # TYPE: alias
 # DESC: ls sorted by name
 function ls {
+  echo "TEST"
   if [[ "$OSTYPE" == "linux-gnu" ]]; then
     ls --color=auto -gAhLH --no-group --author --literal --group-directories-first
   elif [[ "$OSTYPE" == "darwin"* ]]; then
