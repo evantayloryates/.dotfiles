@@ -1,0 +1,1 @@
+Fix 'pd' command to not execute functions (unless 'exe' optional arg is specified)
