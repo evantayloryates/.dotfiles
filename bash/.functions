@@ -34,6 +34,26 @@ function new {
    fi
 }
 
+# TYPE: alias
+# DESC: ls sorted by name
+function ls {
+  if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    ls --color=auto -gAhLH --no-group --author --literal --group-directories-first
+  elif [[ "$OSTYPE" == "darwin"* ]]; then
+    gls --color=auto -gAhLH --no-group --author --literal --group-directories-first --ignore=.DS_Store 2> /dev/null
+  elif [[ "$OSTYPE" == "cygwin" ]]; then
+    echo "# POSIX compatibility layer and Linux environment emulation for Windows"
+  elif [[ "$OSTYPE" == "msys" ]]; then
+    echo "Lightweight shell and GNU utilities compiled for Windows (part of MinGW)"
+  elif [[ "$OSTYPE" == "win32" ]]; then
+    echo "I'm not sure this can happen."
+  elif [[ "$OSTYPE" == "freebsd"* ]]; then
+    echo "FreeBSD OS"
+  else
+    echo "Unknown OS: ${OSTYPE}"
+  fi
+}
+
 # TYPE: function
 # DESC: Prints Time To First Byte (in milliseconds) 
 function ttfb {
