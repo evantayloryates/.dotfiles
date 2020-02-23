@@ -1,6 +1,6 @@
 - Configure Selenium for Amazon API
   
-
+- add script to sort aliases on last update date 
 - merge old hammerspoon scripts into dotfiles dir
 - fix all file openers in dotfiles to use Sublime or Vim
 - Why is pacman terminal printing Git output twice?

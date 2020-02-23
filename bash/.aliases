@@ -2,16 +2,20 @@
 
 # TYPE: alias
 # DESC: generate alphanumeric password
+# CREATED: None
+# UPDATED: None
 alias gpw="python $DOTFILES_DIR/python-tools/cli/generate_password.py"
 
 # TYPE: alias
-# DESC:
-# CREATED:
-# UPDATED:
-alias now="date -u +\"%Y-%m-%d %I:%M:%S\""
+# DESC: Prints human readable time to STDOUT
+# CREATED: Sun Feb 23 15:48:39 PST 2020
+# UPDATED: Sun Feb 23 15:48:39 PST 2020
+alias now="date"
 
 # TYPE: alias
 # DESC: open dofiles directory in Sublime
+# CREATED: None
+# UPDATED: None
 alias dots="subl $DOTFILES_DIR"
 
 # TYPE: alias
