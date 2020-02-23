@@ -5,6 +5,12 @@
 alias gpw="python $DOTFILES_DIR/python-tools/cli/generate_password.py"
 
 # TYPE: alias
+# DESC:
+# CREATED:
+# UPDATED:
+alias now="date -u +\"%Y-%m-%d %I:%M:%S\""
+
+# TYPE: alias
 # DESC: open dofiles directory in Sublime
 alias dots="subl $DOTFILES_DIR"
 
