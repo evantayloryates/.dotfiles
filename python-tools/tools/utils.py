@@ -69,7 +69,7 @@ def pt(obj, pr=True):
 # PRETTY DIR (Pretty print all props of an object)
 # TODO: print out number of args if function
 # TODO: restrict size of columns to prevent large wrapped lines
-def pd(obj, ind_cnt=2, all=False):
+def pd(obj, ind_cnt=2, all=False,exe=True):
     """
     runs "dir" function on the input object and pretty prints the output
     """
@@ -88,8 +88,10 @@ def pd(obj, ind_cnt=2, all=False):
         
         val = getattr(obj, attr)
         
+        # Check is the attribute is a custom type (class)
         is_custom = isclass(val)
         
+        # Get the plaintext type (e.g. 'list' instead of '<class "list">')
         attr_type = pt(val, pr=False)
 
         try:
