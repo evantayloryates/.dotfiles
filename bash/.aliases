@@ -1,6 +1,10 @@
 #!/bin/bash
 
 # TYPE: alias
+# DESC: generate alphanumeric password
+alias gpw="python $DOTFILES_DIR/python-tools/cli/generate_password.py"
+
+# TYPE: alias
 # DESC: open dofiles directory in Sublime
 alias dots="subl $DOTFILES_DIR"
 
@@ -22,7 +26,7 @@ alias ps="ps -ef | head -1; ps"
 
 # TYPE: alias
 # DESC: Open the Python Regular Expression cheat sheet
-alias re="subl $DOTFILES_DIR/python-tools/re_reference.py"
+alias re="subl $DOTFILES_DIR/python-tools/cli/re_reference.py"
 
 # TYPE: alias
 # DESC: open dofiles directory in Sublime
@@ -224,3 +228,4 @@ alias co="command"
 # TYPE: alias
 # DESC: use 'command' to avoid using aliases and functions
 alias condarc="subl ~/.condarc"
+
