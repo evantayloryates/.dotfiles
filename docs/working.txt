@@ -1,0 +1,14 @@
+- Configure Selenium for Amazon API
+  - Fix 'pd' command to not execute functions (unless 'exe' optional arg is specified)
+  
+  	
+- Why is pacman terminal printing Git output twice?
+- On 'src' show files changed and ask for commit message (optional)
+  details twice when running 'src' command
+- Add Sublime prefs to .dotfiles to keep in
+  - make sure no word wrap, or minimap in shared settings
+  - change size of Sublime for one window
+  - fold/unfold all not folding block where cursor is
+- 'dots' command should open folder and start in .init file (instead of blank file)
+- for "pd" dotfiles function: print out number of args if function
+- for "pd" dotfiles function: restrict size of columns to prevent large wrapped lines
