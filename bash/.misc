@@ -20,7 +20,7 @@ prompt_command_if_empty()
 {
     if [ ! "$command_flag" ]
     then
-        pwd
+        clear
         # ls Put whatever command(s) you want here.
     fi
     command_flag=
