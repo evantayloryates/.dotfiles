@@ -1,12 +1,8 @@
 - Configure Selenium for Amazon API
-  
-- make 'now' command copy to clipboard without trailing newline
-- make sure there is always a blank line in bash_history when pressing 'down' arrow
-- prevent any git operations if 'src' command encounters errors
-- merge old hammerspoon scripts into dotfiles dir
-- add script to sort aliases on last update date 
-- fix all file openers in dotfiles to use Sublime or Vim
+
 - Why is pacman terminal printing Git output twice?
+- merge old hammerspoon scripts into dotfiles dir
+- fix all file openers in dotfiles to use Sublime or Vim
 - On 'src' show files changed and ask for commit message (optional)
   details twice when running 'src' command
 - Add Sublime prefs to .dotfiles to keep in
@@ -14,5 +10,6 @@
   - change size of Sublime for one window
   - fold/unfold all not folding block where cursor is
 - 'dots' command should open folder and start in .init file (instead of blank file)
+- add script to sort aliases on last update date 
 - for "pd" dotfiles function: print out number of args if function
 - for "pd" dotfiles function: restrict size of columns to prevent large wrapped lines
