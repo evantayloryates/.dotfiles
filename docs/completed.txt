@@ -5,3 +5,4 @@ Sun Feb 23 16:42:42 PST 2020: make 'now' command copy to clipboard without trail
 Sun Feb 23 16:34:36 PST 2020: add .dotfiles/bin to path
 Sun Feb 23 15:51:06 PST 2020: Fix 'pd' command to not execute functions (unless 'exe' optional arg is specified)
 Sun Feb 23 15:51:06 PST 2020: Added 'now' command that outputs human-readable current datetime
+now
