@@ -1,5 +1,4 @@
 - Configure Selenium for Amazon API
-
 - Make snippet 'now' to autogenerate timestamp
 - Look into appending file name to any output from dotfiles 
 - merge old hammerspoon scripts into dotfiles dir
