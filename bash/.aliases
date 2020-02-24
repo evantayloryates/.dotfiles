@@ -4,31 +4,37 @@
 # DESC: generate alphanumeric password
 # CREATED: None
 # UPDATED: None
+# REQUIRES: None
 alias gpw="python $DOTFILES_DIR/python-tools/cli/generate_password.py"
 
 # TYPE: alias
 # DESC: Prints human readable time to STDOUT
 # CREATED: Sun Feb 23 15:48:39 PST 2020
 # UPDATED: Sun Feb 23 16:41:40 PST 2020
-alias now="echo -n `date` | pbcopy; date; echo 'Copied to Clipboard!'"
+# REQUIRES: pbcopy
+alias now="if [ \"$(uname)\" == \"Darwin\" ]; then echo -n `date` | pbcopy; echo 'Copied to Clipboard'; fi; date; "
 
 # TYPE: alias
 # DESC: open dofiles directory in Sublime and opens bash profile
 # CREATED: None
 # UPDATED: None
-alias dots="subl $DOTFILES_DIR; pro"
+# REQUIRES: DIR_OPENER_CMD
+alias dots="[ ! -z $DIR_OPENER_CMD ]; then $DOTFILES_DIR; pro; fi"
 
 # TYPE: alias
 # DESC: change to .dotfiles directory
 # CREATED: None
 # UPDATED: None
-alias dot="cd $DOTFILES_DIR; cl"
+# REQUIRES: None
+# REQUIRES: None
+alias dot="cd $DOTFILES_DIR; clear"
 
 # TYPE: alias
 # DESC: open dofiles directory in Sublime
 # CREATED: None
 # UPDATED: None
-alias pro="subl $HOME/.bash_profile"
+# REQUIRES: FILE_OPENER_CMD
+alias pro="$FILE_OPENER_CMD $HOME/.bash_profile"
 
 # TYPE: alias
 # DESC: runs Python with interpreter
@@ -46,7 +52,7 @@ alias ps="ps -ef | head -1; ps"
 # DESC: Open the Python Regular Expression cheat sheet
 # CREATED: None
 # UPDATED: None
-alias re="subl $DOTFILES_DIR/python-tools/cli/re_reference.py"
+alias re="$FILE_OPENER_CMD $DOTFILES_DIR/python-tools/cli/re_reference.py"
 
 # TYPE: alias
 # DESC: open dofiles directory in Sublime
@@ -125,12 +131,6 @@ alias cd....="cd ../../.."
 # CREATED: None
 # UPDATED: None
 alias cd\-="cd -"
-
-# TYPE: alias
-# DESC: clear terminal
-# CREATED: None
-# UPDATED: None
-alias cl="clear"
 
 # TYPE: alias
 # DESC: list just directories

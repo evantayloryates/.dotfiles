@@ -1,8 +1,9 @@
 - Configure Selenium for Amazon API
 
 
-- merge old hammerspoon scripts into dotfiles dir
 - fix all file openers in dotfiles to use Sublime or Vim
+- auto git commit script: list changed files by index, then ask for indices that should be added to commit
+- merge old hammerspoon scripts into dotfiles dir
   details twice when running 'src' command
 - Add Sublime prefs to .dotfiles to keep in
   - make sure no word wrap, or minimap in shared settings

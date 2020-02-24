@@ -1,13 +1,25 @@
 #!/bin/bash
 
-# Wherever you keep your local source code
-SRC_DIR=<src-dir-here>
+# TYPE: dotfiles-config
+# DESC: Directory where you keep your local source code
+# CREATED:
+# UPDATED:
+SRC_DIR=
 
-# Set applications directory
-APPS_DIR=<apps-dir-here>
+# TYPE: dotfiles-config
+# DESC: Set applications directory (Generally "/Applications")
+# CREATED:
+# UPDATED:
+APPS_DIR=
 
-# Full path for your preferred editor application
-EDITOR_APP=<path-to-editor-app-here>
+# TYPE: dotfiles-config
+# DESC: Preferred command used for opening files 
+# CREATED:
+# UPDATED:
+FILE_OPENER_CMD=
 
-EDITOR_COMMAND=<command-for-opening-editor>
-test change
+# TYPE: dotfiles-config
+# DESC: Preferred command used for opening directories If no dir opener, leave as 'DIR_OPENER_CMD='
+# CREATED:
+# UPDATED: 
+DIR_OPENER_CMD=
