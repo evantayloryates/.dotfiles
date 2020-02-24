@@ -35,7 +35,7 @@ if [[ `git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR status --porc
   printf "Modified Files:\n"
   git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR status
   
-  
+  #small change
   read -p 'Commit? [y]/n: ' should_commit
   if [ -z "$should_commit" ] || [ "$should_commit" == "y" ]; then 
   	
