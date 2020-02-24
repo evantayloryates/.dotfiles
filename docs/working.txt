@@ -1,7 +1,6 @@
 - Configure Selenium for Amazon API
 
-- 'dots' command should open folder and start in .init file (instead of blank file)
-- Why is pacman terminal printing Git output twice?
+- Make snippet 'now' to autogenerate timestamp
 - Look into appending file name to any output from dotfiles 
 - merge old hammerspoon scripts into dotfiles dir
 - fix all file openers in dotfiles to use Sublime or Vim

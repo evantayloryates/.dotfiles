@@ -1,4 +1,6 @@
 
+Sun Feb 23 17:18:43 PST 2020: 'dots' command should open folder and start in .init file (instead of blank file)
+Sun Feb 23 17:18:43 PST 2020: pacman terminal printing Git output twice?
 Sun Feb 23 16:42:42 PST 2020: make 'now' command copy to clipboard without trailing newline
 Sun Feb 23 16:34:36 PST 2020: add .dotfiles/bin to path
 Sun Feb 23 15:51:06 PST 2020: Fix 'pd' command to not execute functions (unless 'exe' optional arg is specified)
