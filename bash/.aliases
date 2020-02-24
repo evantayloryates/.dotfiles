@@ -9,8 +9,8 @@ alias gpw="python $DOTFILES_DIR/python-tools/cli/generate_password.py"
 # TYPE: alias
 # DESC: Prints human readable time to STDOUT
 # CREATED: Sun Feb 23 15:48:39 PST 2020
-# UPDATED: Sun Feb 23 15:48:39 PST 2020
-alias now="date"
+# UPDATED: Sun Feb 23 16:41:40 PST 2020
+alias now="echo -n `date` | pbcopy; date; echo 'Copied to Clipboard!'"
 
 # TYPE: alias
 # DESC: open dofiles directory in Sublime

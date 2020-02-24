@@ -1,7 +1,10 @@
 - Configure Selenium for Amazon API
   
-- add script to sort aliases on last update date 
+- make 'now' command copy to clipboard without trailing newline
+- make sure there is always a blank line in bash_history when pressing 'down' arrow
+- prevent any git operations if 'src' command encounters errors
 - merge old hammerspoon scripts into dotfiles dir
+- add script to sort aliases on last update date 
 - fix all file openers in dotfiles to use Sublime or Vim
 - Why is pacman terminal printing Git output twice?
 - On 'src' show files changed and ask for commit message (optional)
