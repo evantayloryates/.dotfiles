@@ -1,6 +1,8 @@
 - Configure Selenium for Amazon API
 
+- 'dots' command should open folder and start in .init file (instead of blank file)
 - Why is pacman terminal printing Git output twice?
+- Look into appending file name to any output from dotfiles 
 - merge old hammerspoon scripts into dotfiles dir
 - fix all file openers in dotfiles to use Sublime or Vim
 - On 'src' show files changed and ask for commit message (optional)
@@ -9,7 +11,6 @@
   - make sure no word wrap, or minimap in shared settings
   - change size of Sublime for one window
   - fold/unfold all not folding block where cursor is
-- 'dots' command should open folder and start in .init file (instead of blank file)
 - add script to sort aliases on last update date 
 - for "pd" dotfiles function: print out number of args if function
 - for "pd" dotfiles function: restrict size of columns to prevent large wrapped lines

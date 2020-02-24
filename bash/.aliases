@@ -13,10 +13,10 @@ alias gpw="python $DOTFILES_DIR/python-tools/cli/generate_password.py"
 alias now="echo -n `date` | pbcopy; date; echo 'Copied to Clipboard!'"
 
 # TYPE: alias
-# DESC: open dofiles directory in Sublime
+# DESC: open dofiles directory in Sublime and opens bash profile
 # CREATED: None
 # UPDATED: None
-alias dots="subl $DOTFILES_DIR"
+alias dots="subl $DOTFILES_DIR; pro"
 
 # TYPE: alias
 # DESC: change to .dotfiles directory
