@@ -8,6 +8,7 @@ eval $(gdircolors -b $DOTFILES_DIR/.dir_colors 2> /dev/null || dircolors -b $DOT
 # DESC: Set the empty command to 'ls'
 command1()
 {
+    history -a
     if [ "$BASH_COMMAND" != command2 ]
     then
         command_flag=1
