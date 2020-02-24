@@ -5,6 +5,12 @@
 eval $(gdircolors -b $DOTFILES_DIR/.dir_colors 2> /dev/null || dircolors -b $DOTFILES_DIR/.dir_colors)
 
 # TYPE: misc
+# DESC: loads history from ~/.bash_history
+# CREATED: Sun Feb 23 16:59:31 PST 2020
+# UPDATED: Sun Feb 23 16:59:31 PST 2020
+history -r $HISTFILE
+
+# TYPE: misc
 # DESC: Set the empty command to 'ls'
 command1()
 {
