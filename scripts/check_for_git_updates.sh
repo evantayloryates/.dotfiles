@@ -32,11 +32,14 @@ printf "Local Changes: "
 if [[ `git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR status --porcelain` ]]; then
   
   printf "${COLOR_GREEN}YES${NC}\n"
-  printf "Modified Files:\n"
-  git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR status
   
-  #small change
-  read -p 'Commit? [y]/n: ' should_commit
+  printf "\nFILES CHANGED::\n\n"
+  git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR status --porcelain | sed 's/^/  /'
+  
+  # add a new line for formatting
+  echo
+
+  read -p "Commit? [y]/n: " should_commit
   if [ -z "$should_commit" ] || [ "$should_commit" == "y" ]; then 
   	
   	read -p 'Commit message? [n]/<your-message>: ' commit_msg
@@ -44,7 +47,7 @@ if [[ `git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR status --porc
 		commit_msg="$DEFAULT_COMMIT_MESSAGE";
 	fi
 
-	echo $commit_msg
+	printf "COMMIT MESSAGE: ${commit_msg}"
 	
 	# Git add all
 	git_add_msg=$(git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR add -A)
