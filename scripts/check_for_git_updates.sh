@@ -47,7 +47,7 @@ if [[ `git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR status --porc
 		commit_msg="$DEFAULT_COMMIT_MESSAGE";
 	fi
 
-	printf "COMMIT MESSAGE: ${commit_msg}"
+	printf "\nCOMMIT MESSAGE: ${commit_msg}\n\n"
 	
 	# Git add all
 	git_add_msg=$(git --git-dir=$DOTFILES_DIR/.git --work-tree=/$DOTFILES_DIR add -A)
