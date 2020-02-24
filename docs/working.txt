@@ -1,7 +1,6 @@
 - Configure Selenium for Amazon API
 
-- On 'src' show files changed and ask for commit message (optional)
-- Look into appending file name to any output from dotfiles 
+
 - merge old hammerspoon scripts into dotfiles dir
 - fix all file openers in dotfiles to use Sublime or Vim
   details twice when running 'src' command

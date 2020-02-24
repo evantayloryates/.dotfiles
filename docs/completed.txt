@@ -1,4 +1,5 @@
 
+Sun Feb 23 17:18:43 PST 2020: On 'src' show files changed and ask for commit message (optional)
 Sun Feb 23 17:18:43 PST 2020: 'dots' command should open folder and start in .init file (instead of blank file)
 Sun Feb 23 17:18:43 PST 2020: pacman terminal printing Git output twice?
 Sun Feb 23 16:42:42 PST 2020: make 'now' command copy to clipboard without trailing newline
