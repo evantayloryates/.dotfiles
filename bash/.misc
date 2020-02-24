@@ -5,25 +5,18 @@
 eval $(gdircolors -b $DOTFILES_DIR/.dir_colors 2> /dev/null || dircolors -b $DOTFILES_DIR/.dir_colors)
 
 # TYPE: misc
-# DESC: loads history from ~/.bash_history
-# CREATED: Sun Feb 23 16:59:31 PST 2020
-# UPDATED: Sun Feb 23 16:59:31 PST 2020
-history -r $HISTFILE
-
-# TYPE: misc
 # DESC: Set the empty command to 'ls'
-command1()
+prompt_command()
 {
-    history -a
-    history -r $HISTFILE
-    if [ "$BASH_COMMAND" != command2 ]
+    if [ "$BASH_COMMAND" != prompt_command_if_empty ]
     then
         command_flag=1
     fi
     return 0
 }
-trap command1 debug
-command2()
+trap prompt_command debug
+
+prompt_command_if_empty()
 {
     if [ ! "$command_flag" ]
     then
