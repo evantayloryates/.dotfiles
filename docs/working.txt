@@ -1,9 +1,9 @@
 - Configure Selenium for Amazon API
-- Make snippet 'now' to autogenerate timestamp
+
+- On 'src' show files changed and ask for commit message (optional)
 - Look into appending file name to any output from dotfiles 
 - merge old hammerspoon scripts into dotfiles dir
 - fix all file openers in dotfiles to use Sublime or Vim
-- On 'src' show files changed and ask for commit message (optional)
   details twice when running 'src' command
 - Add Sublime prefs to .dotfiles to keep in
   - make sure no word wrap, or minimap in shared settings
@@ -12,3 +12,7 @@
 - add script to sort aliases on last update date 
 - for "pd" dotfiles function: print out number of args if function
 - for "pd" dotfiles function: restrict size of columns to prevent large wrapped lines
+
+
+HARD
+- Make snippet 'now' to autogenerate timestamp
