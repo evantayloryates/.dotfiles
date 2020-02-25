@@ -1,4 +1,7 @@
-
+Mon Feb 24 13:09:20 PST 2020: Sublime -> set tab key to be 4 spaces and turn off auto tab detection (the latter is requireed for the former to consitently work)
+Mon Feb 24 12:34:47 PST 2020: made 'now' alias into function to prevent static date output
+Mon Feb 24 12:27:35 PST 2020: added natural text editing to iTerm
+Sun Feb 23 17:18:43 PST 2020: implemented python 'path' script in .dotfiles
 Sun Feb 23 17:18:43 PST 2020: On 'src' show files changed and ask for commit message (optional)
 Sun Feb 23 17:18:43 PST 2020: 'dots' command should open folder and start in .init file (instead of blank file)
 Sun Feb 23 17:18:43 PST 2020: pacman terminal printing Git output twice?
