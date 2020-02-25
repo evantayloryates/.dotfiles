@@ -16,12 +16,6 @@ PATH=$PATH:/Users/etyates/bin
 # DESC: npm global install directory
 # CREATED: None
 # UPDATED: None
-PATH=$PATH:/Users/etyates/.npm-global/bin
-
-# TYPE: path
-# DESC: npm global install directory
-# CREATED: None
-# UPDATED: None
 PATH=$PATH:/Users/etyates/node_modules/polymer-cli/bin/polymer.js
 
 export PATH
