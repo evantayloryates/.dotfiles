@@ -8,13 +8,6 @@
 alias gpw="python $DOTFILES_DIR/python-tools/cli/generate_password.py"
 
 # TYPE: alias
-# DESC: Prints human readable time to STDOUT
-# CREATED: Sun Feb 23 15:48:39 PST 2020
-# UPDATED: Sun Feb 23 16:41:40 PST 2020
-# REQUIRES: pbcopy
-alias now="if [ \"$(uname)\" == \"Darwin\" ]; then echo -n `date` | pbcopy; echo 'Copied to Clipboard'; fi; date; "
-
-# TYPE: alias
 # DESC: open dofiles directory in Sublime and opens bash profile
 # CREATED: None
 # UPDATED: None
@@ -202,7 +195,7 @@ alias commands="python $DOTFILES_DIR/scripts/get_top_commands.py"
 # DESC: list directories in the current PATH
 # CREATED: None
 # UPDATED: None
-alias path="python $DOTFILES_DIR/scripts/get_path.py"
+alias path="python $DOTFILES_DIR/python-tools/cli/print_path.py"
 
 # TYPE: alias
 # DESC: quick jump to Desktop directory
