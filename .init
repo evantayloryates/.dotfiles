@@ -22,7 +22,7 @@ source $DOTFILES_DIR/bash/.functions
 source $DOTFILES_DIR/bash/.locals 2>/dev/null || printf "No local bash file found at ${DOTFILES_DIR}/bash/.locals    Continuing...\n"
 
 # Check for updates in dotfiles repo
-$DOTFILES_DIR/scripts/check_for_git_updates.sh
+$DOTFILES_DIR/python-tools/cli/check_dotfiles_git.py
 
 
 

@@ -1,4 +1,6 @@
-spaces = require("hs._asm.undocumented.spaces")
+alspaces = require("hs._asm.undocumented.spaces")
+
+require("hs.ipc")
 
 ------------
 -- ALERTS --

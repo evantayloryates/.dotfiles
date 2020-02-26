@@ -134,6 +134,7 @@ EXEC 38;5;124   # This is for files with execute permission:
 
 # RAW DATA
 .csv    38;5;051 # Comma separated value file
+.json	38;5;051 # JavaScript Object Notation (JSON)
 .dat    38;5;051 # Data file
 .db     38;5;051 # Database file
 .dbf    38;5;051 # Database file

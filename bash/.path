@@ -1,19 +1,21 @@
 #!/bin/bash
 
 # TYPE: path
+# DESC: adds dotfiles 'bin' dir to PATH
+# CREATED: Sun Feb 23 16:32:16 PST 2020
+# UPDATED: Sun Feb 23 16:32:16 PST 2020
+PATH=$PATH:${DOTFILES_DIR}/bin
+
+# TYPE: path
 # DESC: hub
+# CREATED: None
+# UPDATED: None
 PATH=$PATH:/Users/etyates/bin
 
 # TYPE: path
 # DESC: npm global install directory
-PATH=$PATH:/Users/etyates/.npm-global/bin
-
-# TYPE: path
-# DESC: npm global install directory
+# CREATED: None
+# UPDATED: None
 PATH=$PATH:/Users/etyates/node_modules/polymer-cli/bin/polymer.js
-
-# TYPE: path
-# DESC: adds 'subl' command to the active PATH
-PATH=$PATH:${EDITOR_APP}/Contents/SharedSupport/bin
 
 export PATH

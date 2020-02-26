@@ -1,0 +1,18 @@
+- Configure Selenium for Amazon API
+
+
+- fix all file openers in dotfiles to use Sublime or Vim
+- auto git commit script: list changed files by index, then ask for indices that should be added to commit
+- merge old hammerspoon scripts into dotfiles dir
+  details twice when running 'src' command
+- Add Sublime prefs to .dotfiles to keep in
+  - make sure no word wrap, or minimap in shared settings
+  - change size of Sublime for one window
+  - fold/unfold all not folding block where cursor is
+- add script to sort aliases on last update date 
+- for "pd" dotfiles function: print out number of args if function
+- for "pd" dotfiles function: restrict size of columns to prevent large wrapped lines
+
+
+HARD
+- Make snippet 'now' to autogenerate timestamp

@@ -1,6 +1,20 @@
 #!/bin/bash
 
 # TYPE: function
+# DESC: Prints human readable time to STDOUT
+# CREATED: Sun Feb 23 15:48:39 PST 2020
+# UPDATED: Sun Feb 23 16:41:40 PST 2020
+# REQUIRES: pbcopy
+function now {
+  if [ \"$(uname)\" == \"Darwin\" ]; then 
+    echo -n $(date) | pbcopy 
+    echo 'Copied to Clipboard'; 
+  fi; 
+  date
+}
+
+
+# TYPE: function
 # DESC: ensures the default 'python' command is v3.6+
 function py3 {
 	if [ $# -eq 0 ] 
@@ -11,6 +25,7 @@ function py3 {
 		python3.6 "$@"
 	fi
 }
+
 
 # TYPE: function
 # DESC: ensures the default 'python' command is v3.6+
@@ -32,6 +47,26 @@ function new {
     touch $1
     open $1
    fi
+}
+
+# TYPE: alias
+# DESC: ls sorted by name
+function ls {
+  if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    ls --color=auto -gAhLH --no-group --author --literal --group-directories-first $@
+  elif [[ "$OSTYPE" == "darwin"* ]]; then
+    gls --color=auto -gAhLH --no-group --author --literal --group-directories-first --ignore=.DS_Store $@
+  elif [[ "$OSTYPE" == "cygwin" ]]; then
+    echo "# POSIX compatibility layer and Linux environment emulation for Windows"
+  elif [[ "$OSTYPE" == "msys" ]]; then
+    echo "Lightweight shell and GNU utilities compiled for Windows (part of MinGW)"
+  elif [[ "$OSTYPE" == "win32" ]]; then
+    echo "I'm not sure this can happen."
+  elif [[ "$OSTYPE" == "freebsd"* ]]; then
+    echo "FreeBSD OS"
+  else
+    echo "Unknown OS: ${OSTYPE}"
+  fi
 }
 
 # TYPE: function

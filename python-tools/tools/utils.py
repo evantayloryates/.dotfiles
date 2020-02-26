@@ -67,9 +67,11 @@ def pt(obj, pr=True):
         raise Warning(f"Can't parse type: {str_type}")
 
 # PRETTY DIR (Pretty print all props of an object)
-# TODO: print out number of args if function
-# TODO: restrict size of columns to prevent large wrapped lines
-def pd(obj, ind_cnt=2, all=False):
+#  obj: The object we will run 'dir' on
+#  ind_cnt: the set indent size for the list of the object's attributes
+#  exe: If True, script will try to execute function attributes of obj and display output
+
+def pd(obj, ind_cnt=2, all=False, exe=False):
     """
     runs "dir" function on the input object and pretty prints the output
     """
@@ -88,15 +90,19 @@ def pd(obj, ind_cnt=2, all=False):
         
         val = getattr(obj, attr)
         
+        # Check is the attribute is a custom type (class)
         is_custom = isclass(val)
         
+        # Get the plaintext type (e.g. "list" instead of "<class 'list'>")
         attr_type = pt(val, pr=False)
 
-        try:
-            val = val()
-        except:
-            if type(val) not in [list, int, str, float, bool]:
-                val = ""
+        if exe:
+            try:
+                val = val()
+            except:
+                if type(val) not in [list, int, str, float, bool]:
+                    val = ""
+        else: val = ""
 
         if is_custom: customs += [(attr_type, attr, val)]
         else: primatives += [(attr_type, attr, val)] 
